@@ -1,8 +1,9 @@
 backend:
   name: github
-  repo: ali4zimi/azimiali.me
 
 media_folder: content/img
+public_folder: img
+
 collections:
   - name: posts
     label: Posts
