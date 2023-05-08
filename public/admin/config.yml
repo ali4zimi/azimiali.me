@@ -1,5 +1,5 @@
 backend:
-  name: azimiali.me
+  name: azimiali
 
 media_folder: media
 collections: # A list of collections the CMS should be able to edit
