@@ -1,24 +1,11 @@
 <template>
   <div>
+    <Body class="bg-slate-100 dark:bg-slate-900" />
     <Navbar />
-    <div class="w-1/2 mx-auto bg-slate-100">
-      <slot />
+    <div class="w-1/2 mx-auto">
+      <div class=" px-5 py-10">
+        <slot />
+      </div>
     </div>
   </div>
 </template>
-
-<script setup>
-
-useHead({
-  htmlAttrs: {
-    lang: 'en'
-  },
-  title: 'Ali B. Azimi',
-  meta: [
-    {
-      name: 'description',
-      content: 'Ali Azimi is a software engineer based in Munich.'
-    }
-  ]
-})
-</script>
