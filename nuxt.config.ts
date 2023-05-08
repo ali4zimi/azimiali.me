@@ -4,7 +4,26 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@vueuse/nuxt',
+    '@nuxt/content'
   ],
+  content: {
+    markdown: {
+      toc: {
+        depth: 3,
+        searchDepth: 3,
+      },
+    },
+    highlight: {
+      theme: {
+        default: 'github-dark',
+        dark: 'vitesse-dark',
+      }
+    }
+  },
+
+  tailwindcss: {
+
+  },
 
   devtools: {
     enabled: true
