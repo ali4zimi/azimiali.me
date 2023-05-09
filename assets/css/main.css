@@ -1,3 +1,30 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+
+@layer base {
+  html {
+    font-family: ui-sans-serif,"ui-sans-serif override",system-ui,-apple-system,BlinkMacSystemFont,Segoe UI,Roboto,Helvetica Neue,Arial,Noto Sans,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol,Noto Color Emoji;
+  }
+
+  .prose {
+    max-width: 100%;
+    font-family: "DM Sans", sans-serif;
+  }
+
+
+  .prose a {
+    color: var(--fg-deeper);
+    text-decoration: none;
+    font-weight: 500;
+  }
+
+  .prose h1 {
+    font-size: 2.5rem;
+    font-weight: 500;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 1rem;
+  }
+}

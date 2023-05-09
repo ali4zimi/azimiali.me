@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Html class="scroll-smooth" />
     <NuxtPage />
     <!-- <div class="bg-slate-100 dark:bg-slate-600">Hi</div> -->
   </div>

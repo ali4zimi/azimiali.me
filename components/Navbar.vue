@@ -9,13 +9,10 @@
         <nuxt-link to="/cv">CV</nuxt-link>
       </li>
       <li>
-        <nuxt-link to="/">Projects</nuxt-link>
+        <nuxt-link to="/projects">Projects</nuxt-link>
       </li>
       <li>
         <nuxt-link to="/blog">Blog</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/">Contact</nuxt-link>
       </li>
       <li>
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
@@ -58,7 +55,7 @@
 
 <style>
 .nav-menu {
-  @apply flex justify-between items-center gap-5 text-xl text-slate-700 cursor-pointer dark:text-slate-300
+  @apply hidden md:flex lg:flex justify-between items-center gap-5 text-xl text-slate-700 cursor-pointer  dark:text-slate-300
 }
 
 .nav-menu li {

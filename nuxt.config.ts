@@ -6,6 +6,9 @@ export default defineNuxtConfig({
     '@vueuse/nuxt',
     '@nuxt/content'
   ],
+  css: [
+    '~/assets/css/main.css',
+  ],
   content: {
     markdown: {
       toc: {

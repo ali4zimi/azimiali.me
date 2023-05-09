@@ -17,5 +17,8 @@
     "@vueuse/core": "^10.1.2",
     "@vueuse/nuxt": "^10.1.2",
     "nuxt": "^3.4.3"
+  },
+  "dependencies": {
+    "normalize.css": "^8.0.1"
   }
 }
