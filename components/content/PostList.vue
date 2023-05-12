@@ -5,13 +5,9 @@
       <div class="flex flex-col gap-2">
         <nuxt-link :to="article._path" class="article title" v-for="article in list" :key="article._path">
           <div class="title">{{ article.title }}</div>
-          <!-- published formatted date -->
-          <div class="text-sm text-gray-500">
-            <span class=" uppercase">Published: </span>
-            <span class="publish-date">{{ formatDate(article.date) }}</span>
-          </div>
-          <div>
-            Tags
+          <div class="text-sm pt-3">
+            <span class=" text-slate-300 uppercase">Published: </span>
+            <span class="text-slate-400">{{ formatDate(article.date) }}</span>
           </div>
         </nuxt-link>
       </div>
@@ -21,10 +17,10 @@
 
 <style>
 .article {
-  @apply w-full py-4 px-3 bg-white border rounded-md cursor-pointer 
+  @apply w-full py-5 px-4 bg-white border rounded-md cursor-pointer 
 }
 .dark .article {
-  @apply bg-gray-950 border-gray-950 text-gray-100 hover:border-gray-100  
+  @apply bg-gray-900 border-gray-900 text-gray-100 hover:border-gray-100  
 }
 .article:hover {
   @apply border-gray-950
@@ -44,7 +40,8 @@
 
 const formatDate = (date) => {
   if (date === undefined) return '';
-  const options = { year: 'numeric', month: 'long', day: 'numeric' };
+  // format date as MM/DD/YYYY
+  const options = { year: 'numeric', month: '2-digit', day: '2-digit' };
   return new Date(date).toLocaleDateString('en-US', options);
 }
 </script>
