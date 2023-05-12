@@ -1,5 +1,5 @@
 <template>
-  <nav class="w-full py-6 px-9 bg-slate-100 flex justify-between items-center relative dark:bg-slate-900">
+  <nav class="navbar">
     <nuxt-link to="/" class="logo font-semibold top-0 p-1 w-10 h-10">
       <div class="inline-block text-slate-600 top-0 text-2xl dark:text-slate-300">A</div>
       <div class="inline-block text-slate-400 text-md dark:text-slate-400">A</div>
@@ -54,6 +54,10 @@
 </template>
 
 <style>
+.navbar {
+  @apply w-full py-6 px-9 bg-slate-100 flex justify-between items-center relative dark:bg-slate-900 border-b border-slate-200 dark:border-slate-800
+}
+
 .nav-menu {
   @apply hidden md:flex lg:flex justify-between items-center gap-5 text-xl text-slate-700 cursor-pointer  dark:text-slate-300
 }
