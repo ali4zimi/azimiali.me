@@ -13,7 +13,8 @@ collections:
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Description, name: description, widget: text, required: false}
-      - {label: Language, name: language, widget: string, default: en, required: false}
+      - {label: Language, name: language, widget: select, options: ['en', 'de', 'fa']}
+      - {label: Tags, name: tags, widget: list, required: false}
       - {label: Hero Image, name: hero_image, widget: image, required: false}
       - {label: Draft, name: draft, widget: boolean, required: false}
       - {label: Date, name: date, widget: datetime}
