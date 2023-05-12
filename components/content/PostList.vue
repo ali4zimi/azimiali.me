@@ -8,7 +8,7 @@
           <!-- published formatted date -->
           <div class="text-sm text-gray-500">
             <span class=" uppercase">Published: </span>
-            <span class="text-slate-900">{{ formatDate(article.date) }}</span>
+            <span class="publish-date">{{ formatDate(article.date) }}</span>
           </div>
           <div>
             Tags
@@ -21,13 +21,22 @@
 
 <style>
 .article {
-  @apply w-full py-4 px-3 bg-white border rounded-md cursor-pointer
+  @apply w-full py-4 px-3 bg-white border rounded-md cursor-pointer 
+}
+.dark .article {
+  @apply bg-gray-950 border-gray-950 text-gray-100 hover:border-gray-100  
 }
 .article:hover {
   @apply border-gray-950
 }
 .article .title {
   @apply text-2xl
+}
+.dark .article .title {
+  @apply text-gray-100
+}
+.article .publish-date {
+  @apply text-gray-500
 }
 </style>
 
