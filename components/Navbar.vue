@@ -60,7 +60,7 @@
 
 <style>
 .navbar {
-  @apply w-full py-6 px-9 bg-slate-200 flex justify-between items-center relative dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800
+  @apply w-full py-6 px-9 bg-slate-100 flex justify-between items-center relative dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800
 }
 
 .nav-menu {
