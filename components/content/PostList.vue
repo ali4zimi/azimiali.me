@@ -3,7 +3,7 @@
     <h2>Articles</h2>
     <ContentList path="/posts" v-slot="{ list }">
       <div class="flex flex-col gap-2">
-        <nuxt-link :to="article._path" class="article title" v-for="article in list" :key="article._path">
+        <nuxt-link :to="article._path" class="article title" v-for="article in articles" :key="article._path">
           <div class="title">{{ article.title }}</div>
           <div class="text-sm pt-3">
             <span class=" text-slate-300 uppercase">Published: </span>
@@ -26,7 +26,7 @@
   @apply border-gray-950
 }
 .article .title {
-  @apply text-2xl
+  @apply text-xl truncate
 }
 .dark .article .title {
   @apply text-gray-100
@@ -37,6 +37,12 @@
 </style>
 
 <script setup> 
+
+const articles = await queryContent('posts')
+  .sort({ date: -1 })
+  .find()
+console.log(articles);
+
 
 const formatDate = (date) => {
   if (date === undefined) return '';
