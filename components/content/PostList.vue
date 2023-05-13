@@ -45,6 +45,7 @@
 
 const articles = await queryContent('posts')
   .sort({ date: -1 })
+  .where({ draft: { $ne: true } })
   .find();
 
 const formatDate = (date) => {
