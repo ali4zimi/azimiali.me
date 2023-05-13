@@ -17,9 +17,9 @@ Step 2: Verifying the Installation
 1. Open a terminal or command prompt.
 2. Type the following command and press Enter:
 
-   ```
-   node -v
-   ```
+```js
+node -v
+```
 
    This command will display the installed version of Node.js. Make sure you see a version number, indicating that Node.js is successfully installed.
 
@@ -29,9 +29,9 @@ Step 3: Creating a Node.js Application
 2. Open a terminal or command prompt and navigate to the project directory.
 3. Initialize a new Node.js project by running the following command:
 
-   ```
-   npm init
-   ```
+```js
+npm init
+```
 
    Follow the prompts to provide information about your project. Press Enter to accept the default values for most fields.
 
@@ -40,9 +40,9 @@ Step 4: Writing the Application Code
 1. Create a new file named `app.js` in your project directory.
 2. Open `app.js` in a text editor and add the following code:
 
-   ```
-   console.log("Hello, World!");
-   ```
+```js
+console.log("Hello, World!");
+```
 3. Save the file.
 
 Step 5: Running the Application
@@ -51,9 +51,9 @@ Step 5: Running the Application
 2. Navigate to your project directory if you're not already in it.
 3. Run the following command to execute your Node.js application:
 
-   ```
-   node app.js
-   ```
+```js
+node app.js
+```
 
    You should see the message "Hello, World!" displayed in the terminal, confirming that your application is running successfully.
 
