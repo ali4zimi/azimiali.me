@@ -17,7 +17,7 @@ Step 2: Verifying the Installation
 1. Open a terminal or command prompt.
 2. Type the following command and press Enter:
 
-```js
+```console
 node -v
 ```
 
@@ -29,7 +29,7 @@ Step 3: Creating a Node.js Application
 2. Open a terminal or command prompt and navigate to the project directory.
 3. Initialize a new Node.js project by running the following command:
 
-```js
+```console
 npm init
 ```
 
@@ -51,7 +51,7 @@ Step 5: Running the Application
 2. Navigate to your project directory if you're not already in it.
 3. Run the following command to execute your Node.js application:
 
-```js
+```console
 node app.js
 ```
 
