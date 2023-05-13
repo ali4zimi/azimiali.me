@@ -2,5 +2,8 @@
   "title": "My CV",
   "description": "aasf",
   "language": "en",
-  "body": "T﻿his is the body"
+  "body": "This is the body",
+  "experience": "This is the experience",
+  "education": "This is the education",
+  "skills": "This is the skills"
 }

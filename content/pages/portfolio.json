@@ -1,0 +1,6 @@
+{
+  "projects": [
+    "src/tsconfig.app.json",
+    "src/tsconfig.spec.json"
+  ]
+}

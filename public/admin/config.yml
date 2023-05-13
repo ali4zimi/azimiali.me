@@ -29,8 +29,5 @@ collections:
     fields:
       - {label: Title, name: title, widget: string}
       - {label: Description, name: description, widget: text, required: false}
-      - {label: Language, name: language, widget: select, options: [{label: English, value: en}, {label: German, value: de}, {label: فارسی, value: fa}], default: en}
-      - {label: Tags, name: tags, widget: list, required: false}
-      - {label: Hero Image, name: hero_image, widget: image, required: false}
       - {label: Draft, name: draft, widget: boolean, required: false}
       - {label: Body, name: body, widget: markdown}
