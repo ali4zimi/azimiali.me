@@ -3,14 +3,8 @@
   </div>
   <div class="mobile-menu" :class="isMobileMenuOpen ? 'active' : ''">
     <ul class="mobile-menu-links">
-      <li>
-        <nuxt-link to="/cv">CV</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/portfolio">Portfolio</nuxt-link>
-      </li>
-      <li>
-        <nuxt-link to="/blog">Blog</nuxt-link>
+      <li v-for="link in links">
+        <nuxt-link :to="link.path">{{ link.name }}</nuxt-link>
       </li>
     </ul>
     <ul class="py-4 flex justify-center gap-10 border-t border-slate-200 dark:border-slate-800">
@@ -59,14 +53,8 @@
 
     <div class="nav-menu">
       <ul class="nav-links flex">
-        <li>
-          <nuxt-link to="/cv">CV</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/portfolio">Portfolio</nuxt-link>
-        </li>
-        <li>
-          <nuxt-link to="/blog">Blog</nuxt-link>
+        <li v-for="link in links">
+          <nuxt-link :to="link.path">{{ link.name }}</nuxt-link>
         </li>
         <li>
           <nuxt-link to="https://github.com/ali4zimi">
@@ -162,8 +150,26 @@
 
 <script setup>
 const theme = useTheme();
-// const isClickOutside = useClickOutside();
 const isMobileMenuOpen = ref(false);
+
+const links = [
+  {
+    name: 'Home',
+    path: '/',
+  },
+  {
+    name: 'CV',
+    path: '/cv',
+  },
+  {
+    name: 'Portfolio',
+    path: '/portfolio',
+  },
+  {
+    name: 'Blog',
+    path: '/blog',
+  },
+]
 
 const toggleTheme = () => {
   if (theme.value === 'dark') {
