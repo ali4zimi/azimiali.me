@@ -1,9 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 export default defineNuxtConfig({
-  ssr: false,
+  // ssr: false,
   modules: [
     '@nuxtjs/tailwindcss',
-    '@vueuse/nuxt',
     '@nuxt/content',
     '@vueuse/nuxt',
   ],

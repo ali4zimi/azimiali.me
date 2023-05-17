@@ -1,7 +1,6 @@
 <template>
-  <div>
+  <div class="root hidden">
     <NuxtPage />
-    <!-- <div class="bg-slate-100 dark:bg-slate-600">Hi</div> -->
   </div>
 </template>
 
@@ -18,5 +17,11 @@ useHead({
       content: 'Ali Azimi is a software engineer based in Munich.'
     }
   ]
+})
+
+onMounted(() => {
+  // remove hidden after half a second
+
+  document.querySelector('.root').classList.remove('hidden')
 })
 </script>
