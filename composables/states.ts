@@ -1,3 +1,5 @@
 // check storage for dark mode preference
 
-export const useDarkMode = () => useState("darkMode", () => false);
+export const useTheme = () => useState('theme', () => {
+  return 'light';
+});

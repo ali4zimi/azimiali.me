@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: [
     '@nuxtjs/tailwindcss',
     '@nuxt/content',
-    '@vueuse/nuxt',
+    // '@vueuse/nuxt',
   ],
   css: [
     '~/assets/css/main.css',
@@ -23,7 +23,6 @@ export default defineNuxtConfig({
       }
     }
   },
-
   tailwindcss: {
 
   },
