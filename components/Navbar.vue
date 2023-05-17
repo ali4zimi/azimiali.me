@@ -1,6 +1,8 @@
 <template>
+  <div class="mobile-menuoverlay fixed top-0 left-0 bottom-0 right-0 bg-slate-100 opacity-5 dark:bg-slate-950 dark:opacity-30 z-30" v-if="isMobileMenuOpen" @click="toggleMobileMenu">
+  </div>
   <div class="mobile-menu" :class="isMobileMenuOpen ? 'active' : ''">
-    <ul>
+    <ul class="mobile-menu-links">
       <li>
         <nuxt-link to="/cv">CV</nuxt-link>
       </li>
@@ -11,7 +13,7 @@
         <nuxt-link to="/blog">Blog</nuxt-link>
       </li>
     </ul>
-    <ul class="flex justify-center gap-10 border-t border-slate-800 py-5">
+    <ul class="py-4 flex justify-center gap-10 border-t border-slate-200 dark:border-slate-800">
         <li>
           <nuxt-link to="https://github.com/ali4zimi">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 256 256">
@@ -42,8 +44,11 @@
   <nav class="navbar">
     <div class="flex items-center gap-3">
       <div class="mobile-menu-toggler" @click="toggleMobileMenu">
-        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+        <svg v-if="!isMobileMenuOpen" xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
           <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="1.5" d="M20 7H4m16 5H4m16 5H4"/>
+        </svg>
+        <svg v-else xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24">
+          <path fill="currentColor" d="M18.3 5.71a.996.996 0 0 0-1.41 0L12 10.59L7.11 5.7A.996.996 0 1 0 5.7 7.11L10.59 12L5.7 16.89a.996.996 0 1 0 1.41 1.41L12 13.41l4.89 4.89a.996.996 0 1 0 1.41-1.41L13.41 12l4.89-4.89c.38-.38.38-1.02 0-1.4z"/>
         </svg>
       </div>  
       <nuxt-link to="/" class="logo font-semibold top-0 p-1 w-10 h-10">
@@ -110,7 +115,7 @@
 
 <style>
 .navbar {
-  @apply w-full py-6 px-6 bg-slate-100 flex justify-between items-center relative dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800
+  @apply w-full py-6 px-6 bg-slate-100 flex justify-between items-center relative dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 z-50
 }
 
 .nav-menu {
@@ -126,7 +131,7 @@
 }
 
 .theme-switcher {
-  @apply flex justify-center items-center cursor-pointer
+  @apply pr-2 flex justify-center items-center cursor-pointer
 }
 
 .mobile-menu-toggler {
@@ -136,12 +141,17 @@
   @apply text-gray-900 dark:text-gray-100
 }
 
-.dd {
-  @apply left-0
-}
 
 .mobile-menu {
-  @apply w-[270px] py-[120px] px-7 fixed top-0 left-[-270px] bottom-0 bg-slate-100 dark:bg-gray-900 flex flex-col gap-5 text-xl text-slate-700 dark:text-slate-300 transition-all duration-300 ease-in-out
+  @apply w-[270px] py-[120px] px-7 fixed top-0 left-[-270px] bottom-0 bg-slate-100 dark:bg-gray-900 flex flex-col gap-5 text-xl text-slate-700 dark:text-slate-300 transition-all duration-300 ease-in-out z-40
+}
+
+.mobile-menu-links {
+  @apply flex flex-col gap-5
+}
+
+.mobile-menu-links li:hover {
+  @apply text-slate-950 dark:text-slate-50 font-semibold
 }
 
 .mobile-menu.active {
@@ -151,7 +161,8 @@
 </style>
 
 <script setup>
-const isDark = useDark()
+const isDark = useDark();
+// const isClickOutside = useClickOutside();
 const isMobileMenuOpen = ref(false);
 
 const toggleDark = () => {
