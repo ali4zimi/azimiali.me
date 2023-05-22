@@ -1,6 +1,6 @@
 
 # Ali Azimi
-As a highly skilled Front-End Developer with over 6 years of professional and freelance experience, I am
+As a highly skilled Front-End Developer with over six years of professional and freelance experience, I am
 proficient in HTML, CSS, and JavaScript, as well as frameworks like React, Vue.js, and Laravel.
 
 I have a strong background in creating visually appealing and user-friendly websites and applications while
