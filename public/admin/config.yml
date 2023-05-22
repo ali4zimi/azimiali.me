@@ -5,8 +5,8 @@ media_folder: public/images
 public_folder: /images
 
 collections:
-  - name: posts
-    label: Posts
+  - label: posts
+    name: Posts
     folder: content/posts
     create: true
     slug: "{{slug}}"
@@ -20,14 +20,48 @@ collections:
       - {label: Date, name: date, widget: datetime}
       - {label: Body, name: body, widget: markdown}
 
-  - name: pages
-    label: Pages
-    folder: content/pages
-    create: true
-    format: json
-    slug: "{{slug}}"
-    fields:
-      - {label: Title, name: title, widget: string}
-      - {label: Description, name: description, widget: text, required: false}
-      - {label: Draft, name: draft, widget: boolean, required: false}
-      - {label: Body, name: body, widget: markdown}
+  - label: Pages
+    name: pages
+    files: 
+      - label: Portfolio
+        name: portfolio
+        file: content/pages/portfolio.json
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text, required: false}
+          - label: Projects
+            name: projects
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text, required: false}
+              - {label: Link, name: link, widget: string, required: false}
+              - {label: Image, name: image, widget: image, required: false}
+              - {label: Tags, name: tags, widget: list, required: false}
+              - {label: Date, name: date, widget: datetime}
+              - {label: Body, name: body, widget: markdown}
+
+      - label: CV
+        name: cv
+        file: content/pages/cv.json
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text, required: false}
+          - {label: Body, name: body, widget: markdown}
+          - label: Education
+            name: education
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text, required: false}
+              - {label: Date, name: date, widget: datetime}
+              - {label: Body, name: body, widget: markdown}
+          - label: Experience
+            name: experience
+            widget: list
+            fields:
+              - {label: Title, name: title, widget: string}
+              - {label: Description, name: description, widget: text, required: false}
+              - {label: Date, name: date, widget: datetime}
+              - {label: Body, name: body, widget: markdown}
+
