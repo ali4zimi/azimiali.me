@@ -1,6 +1,28 @@
 {
   "projects": [
-    "src/tsconfig.app.json",
-    "src/tsconfig.spec.json"
+    {
+      "name": "Negah",
+      "description": "An online platform for buying and selling house properties",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib",
+      "link": "https://negaah.netlify.app/"
+    },
+    {
+      "name": "Project 2",
+      "description": "This is project 2",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib",
+      "link": "https://negaah.netlify.app/"
+    },
+    {
+      "name": "Project 3",
+      "description": "This is project 3",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib",
+      "link": "https://negaah.netlify.app/"
+    },
+    {
+      "name": "Project 4",
+      "description": "This is project 4",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib",
+      "link": "https://negaah.netlify.app/"
+    }
   ]
 }
