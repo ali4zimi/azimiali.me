@@ -1,35 +1,60 @@
 <template>
   <NuxtLayout>
-    <h3>Me and Technology</h3>
-    <div class="w-8/12 mx-auto mt-10 px-4 relative aspect-video bg-slate-300">
+    <h1 class="text-center">Coming Soon</h1>
 
-      <div class="time-line">d</div>
-      <div @click="toggleMenu">{{ menuOpen }}</div>
+    <div class="dragzone relative w-8/12 mx-auto mt-10 px-4  aspect-video bg-slate-300 hidden">
+      <div class="timeline"></div>
+      <div id="dragable">
+      </div>
     </div>
   </NuxtLayout>
 </template>
 
 <style>
-.time-line {
+.timeline {
+  @apply bg-slate-500 ;
   position: absolute;
-  top: 0;
-  left: 50%;
   width: 2px;
   height: 100%;
-  background: #fff;
+  left: 50%;
   transform: translateX(-50%);
+}
 
+#dragable {
+  @apply bg-slate-500 ;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 20px;
+  height: 20px;
+  top: 50%;
 }
 </style>
 
 <script setup>
 
-import { ref } from 'vue'
+onMounted(() => {
+  const dragable = document.getElementById('dragable');
+  let currentValue = 0;
 
-const menuOpen = ref(false)
+  dragable.addEventListener('mousedown', (e) => {
+    // get current position with %
+    const currentPercentage = parseInt(dragable.style.top, 10);
+    e.preventDefault();
+    document.addEventListener('mousemove', onMouseMove);
+    document.addEventListener('mouseup', onMouseUp);
+  });
 
-const toggleMenu = () => {
-  useToggle.toggle(menuOpen)
-  console.log(menuOpen.value)
-}
+  const onMouseMove = (e) => {
+    const newPercentage = currentPercentage + e.movementY;
+    if (newPercentage >= 0 && newPercentage <= 100) {
+      dragable.style.top = `${newPercentage}%`;
+    }
+  };
+
+  const onMouseUp = () => {
+    document.removeEventListener('mousemove', onMouseMove);
+    document.removeEventListener('mouseup', onMouseUp);
+  };
+})
 </script>
