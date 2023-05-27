@@ -1,4 +1,5 @@
 <template>
+  <ProgressBar />
   <div class="root hidden">
     <NuxtPage />
   </div>
