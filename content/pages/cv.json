@@ -5,25 +5,23 @@
   "educations": [
     {
       "organization": {
-        "start_date": "2022-10-01T13:55:38.008Z",
-        "end_date": "",
         "name": "Technical University of Munich",
-        "star_date": "2023-05-30T14:23:50.409Z",
         "icon": "/images/tum-logo.png"
       },
       "title": "Master of Management and Technology",
+      "start_date": "2022-10-01T13:55:38.008Z",
+      "end_date": "",
       "address": "Arcisstraße 21, 80333 München, Germany",
       "description": "The Technical University of Munich (TUM) is ranked among the 25 best universities worldwide in several subjects.\n\n[h﻿ttps://www.tum.de](<h﻿ttps://www.tum.de>)"
     },
     {
       "organization": {
-        "start_date": "2014-03-01T15:00:37.459Z",
-        "end_date": "2017-10-31T15:00:37.473Z",
         "name": "Avicenna University",
-        "star_date": "2023-05-30T14:23:50.422Z",
         "icon": "/images/avicenna-uni-logo.jpeg"
       },
       "title": "Bachelor of Business Economics",
+      "start_date": "2014-03-01T15:00:37.459Z",
+      "end_date": "2017-10-31T15:00:37.473Z",
       "address": "Karte 4, Kabul, Afghanistan",
       "description": "O﻿ne of the best universities in Afghanistan.\n[h﻿ttps://avicenna.edu.af](<h﻿ttps://avicenna.edu.af>)"
     }
@@ -31,36 +29,33 @@
   "experiences": [
     {
       "organization": {
-        "start_date": "2018-05-15T12:23:53.286Z",
-        "end_date": "2022-02-26T13:23:53.296Z",
         "name": "PI Manufacturing Company",
-        "star_date": "2023-05-30T14:23:50.434Z",
         "icon": "/images/pi-logo.png"
       },
       "title": " Database and Application Manager",
+      "start_date": "2018-05-15T12:23:53.286Z",
+      "end_date": "2022-02-26T13:23:53.296Z",
       "address": "Karte 4, Kabul, Afghanistan",
       "job_description": "* Designing and developing and managing databases and applications\n* Discovering organization needs and providing a suitable solution\n* Leading team to provide solutions based on organizational need\n* Developing modules for each department and integrating them with other modules\n* Writing documentation for all updates in the application\n* Database maintenance and backup\n* Develop a database for departments to facilitate communication and data centralization\n* Troubleshoot hardware and software issues, and perform maintenance such as driver installation of manufacturing machines\n* Test new technologies by reading their manuals\n* Training users"
     },
     {
       "organization": {
-        "start_date": "2017-08-09T12:28:39.197Z",
-        "end_date": "2018-05-10T12:28:39.207Z",
         "name": "Mehran Restaurant & Catering",
-        "star_date": "2023-05-30T14:23:50.443Z",
         "icon": "/images/mehran.png"
       },
       "title": "Database Administrator",
+      "start_date": "2017-08-09T12:28:39.197Z",
+      "end_date": "2018-05-10T12:28:39.207Z",
       "address": "Pole-e-Sorkh Square, Kabul, Afghanistan",
       "job_description": "* Configuration and setup of the Restaurant Application, e.g. eZee Burp\n* Dealing with finance staff modules of the Application e.g. Payroll System\n* Website content manager using WordPress \n* Applying suitable plugins for the website\n* Customizations of the theme using HTML, JavaScript, and CSS\n  Subtasks:\n* Advising the social media department about how to increase attractions\n* Social media advertisement"
     },
     {
       "organization": {
-        "start_date": "2023-05-30T12:32:08.713Z",
-        "end_date": "2023-05-30T12:32:08.725Z",
         "name": "DEM Group of Companies",
-        "star_date": "2023-05-30T14:23:50.452Z"
       },
       "title": " Web Developer",
+      "start_date": "2023-05-30T12:32:08.713Z",
+      "end_date": "2023-05-30T12:32:08.725Z",
       "job_description": "* Managing and posting content\n* Photography of products and uploading them to the website and social media pages\n* Other IT tasks",
       "address": "Darulaman St, District 6, Kabul, Afghanistan"
     }

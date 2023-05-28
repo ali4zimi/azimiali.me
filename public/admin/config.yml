@@ -53,29 +53,31 @@ collections:
             widget: list
             fields:
               - {label: Award Title, name: title, widget: string}
+              - {label: Start Date, name: start_date, widget: date}
+              - {label: Start Date, name: end_date, widget: date, required: false}
               - label: Organization
                 name: organization
                 widget: object
                 fields:
                   - {label: Name, name: name, widget: string}
                   - {label: Icon, name: icon, widget: image, required: false}
-                  - {label: Start Date, name: start_date, widget: date}
-                  - {label: Start Date, name: end_date, widget: date, required: false}
-              - {label: Address, name: address, widget: text, required: false}
+                  - {label: Address, name: address, widget: text, required: false}
+                  - {label: Website, name: website, widget: string, required: false}
               - {label: Description, name: description, widget: markdown}
           - label: Experiences
             name: experiences
             widget: list
             fields:
               - {label: Job Title, name: title, widget: string}
+              - {label: Start Date, name: start_date, widget: date}
+              - {label: Start Date, name: end_date, widget: date, required: false}
               - label: Organization
                 name: organization
                 widget: object
                 fields:
                   - {label: Name, name: name, widget: string}
                   - {label: Icon, name: icon, widget: image, required: false}
-                  - {label: Start Date, name: start_date, widget: date}
-                  - {label: Start Date, name: end_date, widget: date, required: false}
-              - {label: Address, name: address, widget: text, required: false}
+                  - {label: Address, name: address, widget: text, required: false}
+                  - {label: Website, name: website, widget: string, required: false}
               - {label: Job Description, name: job_description, widget: markdown}
 
