@@ -59,7 +59,7 @@ collections:
                 fields:
                   - {label: Name, name: name, widget: string}
                   - {label: Icon, name: icon, widget: image, required: false}
-                  - {label: Start Date, name: star_date, widget: date}
+                  - {label: Start Date, name: start_date, widget: date}
                   - {label: Start Date, name: end_date, widget: date, required: false}
               - {label: Address, name: address, widget: text, required: false}
               - {label: Description, name: description, widget: markdown}
@@ -74,7 +74,7 @@ collections:
                 fields:
                   - {label: Name, name: name, widget: string}
                   - {label: Icon, name: icon, widget: image, required: false}
-                  - {label: Start Date, name: star_date, widget: date}
+                  - {label: Start Date, name: start_date, widget: date}
                   - {label: Start Date, name: end_date, widget: date, required: false}
               - {label: Address, name: address, widget: text, required: false}
               - {label: Job Description, name: job_description, widget: markdown}

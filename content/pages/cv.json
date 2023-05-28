@@ -5,7 +5,7 @@
   "educations": [
     {
       "organization": {
-        "star_date": "2022-10-01T13:55:38.008Z",
+        "start_date": "2022-10-01T13:55:38.008Z",
         "end_date": "",
         "name": "Technical University of Munich"
       },
@@ -15,7 +15,7 @@
     },
     {
       "organization": {
-        "star_date": "2014-03-01T15:00:37.459Z",
+        "start_date": "2014-03-01T15:00:37.459Z",
         "end_date": "2017-10-31T15:00:37.473Z",
         "name": "Avicenna University"
       },
@@ -27,7 +27,7 @@
   "experiences": [
     {
       "organization": {
-        "star_date": "2018-05-15T12:23:53.286Z",
+        "start_date": "2018-05-15T12:23:53.286Z",
         "end_date": "2022-02-26T13:23:53.296Z",
         "name": "PI Manufacturing Company"
       },
@@ -37,7 +37,7 @@
     },
     {
       "organization": {
-        "star_date": "2017-08-09T12:28:39.197Z",
+        "start_date": "2017-08-09T12:28:39.197Z",
         "end_date": "2018-05-10T12:28:39.207Z",
         "name": "Mehran Restaurant"
       },
@@ -47,7 +47,7 @@
     },
     {
       "organization": {
-        "star_date": "2023-05-30T12:32:08.713Z",
+        "start_date": "2023-05-30T12:32:08.713Z",
         "end_date": "2023-05-30T12:32:08.725Z",
         "name": "DEM Group of Companies"
       },
