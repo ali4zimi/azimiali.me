@@ -52,16 +52,30 @@ collections:
             name: educations
             widget: list
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: text, required: false}
-              - {label: Date, name: date, widget: datetime}
-              - {label: Body, name: body, widget: markdown}
+              - {label: Award Title, name: title, widget: string}
+              - label: Organization
+                name: organization
+                widget: object
+                fields:
+                  - {label: Name, name: name, widget: string}
+                  - {label: Icon, name: icon, widget: image, required: false}
+                  - {label: Start Date, name: star_date, widget: date}
+                  - {label: Start Date, name: end_date, widget: date, required: false}
+              - {label: Address, name: address, widget: text, required: false}
+              - {label: Description, name: description, widget: markdown}
           - label: Experiences
             name: experiences
             widget: list
             fields:
-              - {label: Title, name: title, widget: string}
-              - {label: Description, name: description, widget: text, required: false}
-              - {label: Date, name: date, widget: datetime}
-              - {label: Body, name: body, widget: markdown}
+              - {label: Job Title, name: title, widget: string}
+              - label: Organization
+                name: organization
+                widget: object
+                fields:
+                  - {label: Name, name: name, widget: string}
+                  - {label: Icon, name: icon, widget: image, required: false}
+                  - {label: Start Date, name: star_date, widget: date}
+                  - {label: Start Date, name: end_date, widget: date, required: false}
+              - {label: Address, name: address, widget: text, required: false}
+              - {label: Job Description, name: job_description, widget: markdown}
 

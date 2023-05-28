@@ -1,57 +1,59 @@
 <template>
   <NuxtLayout>
-    <h1 class="text-center dark:text-slate-200">Coming Soon (Under Development)</h1>
-    <div class="relative w-full  p-0 sm:p-3 flex flex-col gap-5 hidden">
+    <main>
+      <h1 class="text-center dark:text-slate-200">Coming Soon (Under Development)</h1>
+      <div class="relative w-full  p-0 sm:p-3 flex flex-col gap-5 hidden">
 
-      <div class="item" v-for="(item,index) in experiences">
-        <div class="col" :class="index%2==0 ? 'col-left' : 'invisible'">
-          <div class="item-header w-full flex justify-between">
-            <div class="flex gap-2">
-              <div class="w-10 h-10  rounded-full flex justify-center items-center">
-                <img :src="item.icon" alt="" />
+        <div class="item" v-for="(item,index) in experiences">
+          <div class="col" :class="index%2==0 ? 'col-left' : 'invisible'">
+            <div class="item-header w-full flex justify-between">
+              <div class="flex gap-2">
+                <div class="w-10 h-10  rounded-full flex justify-center items-center">
+                  <img :src="item.icon" alt="" />
+                </div>
+                <div>
+                  <div class="font-bold">{{ item.title }}</div>
+                  <a href="https://www.google.com" class="text-sm">{{ item.company }}</a>
+                </div>
               </div>
               <div>
-                <div class="font-bold">{{ item.title }}</div>
-                <a href="https://www.google.com" class="text-sm">{{ item.company }}</a>
+                <div class="text-sm">{{ item.date }}</div>
               </div>
             </div>
-            <div>
-              <div class="text-sm">{{ item.date }}</div>
+
+            <div class="item-body mt-3">
+              <div class="">{{ item.description }}</div>
             </div>
-          </div>
 
-          <div class="item-body mt-3">
-            <div class="">{{ item.description }}</div>
           </div>
-
-        </div>
-        <div class="pointer"></div>
-        <div class="col" :class="index%2==0 ? 'invisible' : 'col-right'">
-          <div class="item-header w-full flex justify-between">
-            <div class="flex gap-2">
-              <div class="w-10 h-10  rounded-full flex justify-center items-center">
-                <img :src="item.icon" alt="" />
+          <div class="pointer"></div>
+          <div class="col" :class="index%2==0 ? 'invisible' : 'col-right'">
+            <div class="item-header w-full flex justify-between">
+              <div class="flex gap-2">
+                <div class="w-10 h-10  rounded-full flex justify-center items-center">
+                  <img :src="item.icon" alt="" />
+                </div>
+                <div>
+                  <div class="font-bold">{{ item.title }}</div>
+                  <a href="https://www.google.com" class="text-sm">{{ item.company }}</a>
+                </div>
               </div>
               <div>
-                <div class="font-bold">{{ item.title }}</div>
-                <a href="https://www.google.com" class="text-sm">{{ item.company }}</a>
+                <div class="text-sm">{{ item.date }}</div>
               </div>
             </div>
-            <div>
-              <div class="text-sm">{{ item.date }}</div>
+
+            <div class="item-body mt-3">
+              <div class="">{{ item.description }}</div>
             </div>
           </div>
+        </div>
 
-          <div class="item-body mt-3">
-            <div class="">{{ item.description }}</div>
-          </div>
+        <div class="cv-timeline">
+          <div class="cv-timeline-filler"></div>
         </div>
       </div>
-
-      <div class="cv-timeline">
-        <div class="cv-timeline-filler"></div>
-      </div>
-    </div>
+    </main>
   </NuxtLayout>
 </template>
 
