@@ -20,6 +20,10 @@
   @apply w-full py-5 px-4 bg-slate-50 border rounded-md cursor-pointer
 }
 
+.article {
+  /* @apply  */
+}
+
 .dark .article {
   @apply bg-gray-900 border-gray-900 text-gray-100 hover:border-gray-100
 }

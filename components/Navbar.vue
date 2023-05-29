@@ -118,6 +118,10 @@
   @apply flex items-center
 }
 
+.nav-menu a {
+  @apply text-xl 
+}
+
 .theme-switcher {
   @apply pr-2 flex justify-center items-center cursor-pointer
 }
