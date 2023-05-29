@@ -1,14 +1,13 @@
 <template>
   <NuxtLayout>
     <div class="mx-auto mt-10 px-4">
-      <main class="max-w-3xl mx-auto text-slate-800">
+      <main class="max-w-3xl mx-auto text-slate-800 prose">
         <h1>Portfolio</h1>
-        <p>Here are some of the projects I have worked on.</p>
-        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+        <p>Under Construction</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
           <nuxt-link :to="project.link" class="figure" v-for="project in data.projects">
-            <img :src="project.image" :alt="project.title" class="w-full aspect-9/16 object-cover object-center">
+            <h4 class="my-1 font-bold">{{ project.name }}</h4>
             <div class="caption">
-              <h4 class="my-1 font-bold">{{ project.name }}</h4>
               <div class="whitespace-nowrap text-ellipsis overflow-hidden">{{ project.description }}</div>
             </div>
           </nuxt-link>
@@ -20,7 +19,7 @@
 
 <style>
 .figure {
-  @apply relative bg-slate-300 rounded-md border overflow-hidden cursor-pointer dark:bg-slate-800 dark:border-s-slate-400
+  @apply relative h-[100px] p-3 bg-slate-300 rounded-md border overflow-hidden cursor-pointer dark:bg-slate-800 dark:border-s-slate-400
 }
 
 .caption {
