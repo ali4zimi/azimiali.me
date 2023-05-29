@@ -15,6 +15,34 @@
     @apply bg-white dark:bg-gray-800
   }
 
+  /* Webkit-based browsers (e.g., Safari, Chrome) */
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background-color: #ffffff00;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #d4d4d4;
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: #a0a0a0;
+  }
+
+  .root {
+    height: 100vh;
+    overflow: auto;
+    overflow-y: overlay;
+    scrollbar-width: thin;
+    scrollbar-color: #737373 transparent; 
+  }
+
+
+
   main {
     @apply text-gray-900 dark:text-gray-100
   }

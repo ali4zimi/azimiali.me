@@ -17,13 +17,13 @@
                 <div class="item mt-5" v-for="(item, index) in list"
                     :class="index % 2 != 0 ? 'flex-row-reverse' : ''">
                     <div class="col">
-                        <div class="item-header w-full flex justify-between">
+                        <div class="item-header w-full flex justify-between gap-2">
                             <div class="flex gap-2">
                                 <div class="w-10 h-10  rounded-full flex justify-center items-center">
                                     <img :src="item.organization.icon" />
                                 </div>
                                 <div>
-                                    <div class="font-bold">{{ item.title }}</div>
+                                    <div class="item-title">{{ item.title }}</div>
                                     <a target="_blank" :href="item.organization.website" class="text-sm">{{
                                         item.organization.name }}</a>
                                 </div>
@@ -57,7 +57,7 @@
 }
 
 .tm-header {
-  @apply w-full flex justify-center items-center;
+  @apply w-full flex sm:justify-center items-center;
 }
 
 .tm-title {
@@ -80,7 +80,7 @@
 } */
 
 .cv-endline-pointer {
-  @apply bg-slate-300 absolute bottom-0 left-[50%];
+  @apply bg-slate-300 absolute bottom-0 left-[10px] sm:left-[50%];
   width: 15px;
   height: 15px;
   transform: translateX(-50%);
@@ -91,7 +91,7 @@
 }
 
 .col {
-  @apply w-full sm:w-1/3 min-h-[200px] p-4 bg-slate-50 dark:bg-slate-700 dark:text-slate-200 rounded-md cursor-pointer;
+  @apply w-full sm:w-1/3 min-h-[200px] p-4 bg-slate-50 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer;
 }
 
 .empty {
@@ -106,7 +106,7 @@
 }
 
 .pointer-circle {
-  @apply w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-400;
+  @apply w-3 h-3 rounded-full bg-slate-300 dark:bg-slate-300;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -114,19 +114,19 @@
 }
 
 .col:hover {
-  @apply bg-slate-200 dark:bg-slate-600;
+  @apply bg-slate-200 dark:bg-slate-700;
 }
 
 .col:hover + .pointer .pointer-circle {
-  @apply bg-slate-400 dark:bg-slate-200;
+  @apply bg-slate-400 dark:bg-slate-900;
 }
 
 .pointer:hover .pointer-circle {
-  @apply bg-slate-400 dark:bg-slate-200;
+  @apply bg-slate-400 dark:bg-slate-900;
 }
 
-.pointer:hover + .col {
-  @apply bg-slate-200 dark:bg-slate-600;
+.col:has(+ .pointer:hover) {
+  @apply bg-slate-200 dark:bg-slate-900;
 }
 
 </style>
@@ -146,9 +146,9 @@ const props = defineProps({
 })
 
 const formatDate = (date) => {
-  // Month Year
-  const d = new Date(date)
-  return `${d.toLocaleString('default', { month: 'long' })} ${d.getFullYear()}`
+  // format like MMM YYYY
+  const options = { year: 'numeric', month: 'short' };
+  return new Date(date).toLocaleDateString('en-US', options);
 }
 
 // import markdownParser from '@nuxt/content/transformers/markdown'
