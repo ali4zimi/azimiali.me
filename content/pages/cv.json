@@ -7,21 +7,25 @@
       "organization": {
         "start_date": "2022-10-01T13:55:38.008Z",
         "end_date": "",
-        "name": "Technical University of Munich"
+        "name": "Technical University of Munich",
+        "star_date": "2023-05-30T14:23:50.409Z",
+        "icon": "/images/tum-logo.png"
       },
       "title": "Master of Management and Technology",
       "address": "Arcisstraße 21, 80333 München, Germany",
-      "description": "The Technical University of Munich (TUM) is ranked among the 25 best universities worldwide in several subjects."
+      "description": "The Technical University of Munich (TUM) is ranked among the 25 best universities worldwide in several subjects.\n\n[h﻿ttps://www.tum.de](<h﻿ttps://www.tum.de>)"
     },
     {
       "organization": {
         "start_date": "2014-03-01T15:00:37.459Z",
         "end_date": "2017-10-31T15:00:37.473Z",
-        "name": "Avicenna University"
+        "name": "Avicenna University",
+        "star_date": "2023-05-30T14:23:50.422Z",
+        "icon": "/images/avicenna-uni-logo.jpeg"
       },
       "title": "Bachelor of Business Economics",
       "address": "Karte 4, Kabul, Afghanistan",
-      "description": "O﻿ne of the best universities in Afghanistan."
+      "description": "O﻿ne of the best universities in Afghanistan.\n[h﻿ttps://avicenna.edu.af](<h﻿ttps://avicenna.edu.af>)"
     }
   ],
   "experiences": [
@@ -29,7 +33,9 @@
       "organization": {
         "start_date": "2018-05-15T12:23:53.286Z",
         "end_date": "2022-02-26T13:23:53.296Z",
-        "name": "PI Manufacturing Company"
+        "name": "PI Manufacturing Company",
+        "star_date": "2023-05-30T14:23:50.434Z",
+        "icon": "/images/pi-logo.png"
       },
       "title": " Database and Application Manager",
       "address": "Karte 4, Kabul, Afghanistan",
@@ -39,7 +45,9 @@
       "organization": {
         "start_date": "2017-08-09T12:28:39.197Z",
         "end_date": "2018-05-10T12:28:39.207Z",
-        "name": "Mehran Restaurant"
+        "name": "Mehran Restaurant & Catering",
+        "star_date": "2023-05-30T14:23:50.443Z",
+        "icon": "/images/mehran.png"
       },
       "title": "Database Administrator",
       "address": "Pole-e-Sorkh Square, Kabul, Afghanistan",
@@ -49,7 +57,8 @@
       "organization": {
         "start_date": "2023-05-30T12:32:08.713Z",
         "end_date": "2023-05-30T12:32:08.725Z",
-        "name": "DEM Group of Companies"
+        "name": "DEM Group of Companies",
+        "star_date": "2023-05-30T14:23:50.452Z"
       },
       "title": " Web Developer",
       "job_description": "* Managing and posting content\n* Photography of products and uploading them to the website and social media pages\n* Other IT tasks",
