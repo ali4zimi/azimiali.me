@@ -6,7 +6,8 @@
     {
       "organization": {
         "name": "Technical University of Munich",
-        "icon": "/images/tum-logo.png"
+        "icon": "/images/tum-logo.png",
+        "website": "https://www.tum.de"
       },
       "title": "Master of Management and Technology",
       "start_date": "2022-10-01T13:55:38.008Z",
@@ -17,7 +18,8 @@
     {
       "organization": {
         "name": "Avicenna University",
-        "icon": "/images/avicenna-uni-logo.jpeg"
+        "icon": "/images/avicenna-uni-logo.jpeg",
+        "website": "https://avicenna.edu.af"
       },
       "title": "Bachelor of Business Economics",
       "start_date": "2014-03-01T15:00:37.459Z",
@@ -30,7 +32,8 @@
     {
       "organization": {
         "name": "PI Manufacturing Company",
-        "icon": "/images/pi-logo.png"
+        "icon": "/images/pi-logo.png",
+        "website": "https://poshakistanbul.af/"
       },
       "title": " Database and Application Manager",
       "start_date": "2018-05-15T12:23:53.286Z",
@@ -41,7 +44,8 @@
     {
       "organization": {
         "name": "Mehran Restaurant & Catering",
-        "icon": "/images/mehran.png"
+        "icon": "/images/mehran.png",
+        "website": "https://www.mehran.af"
       },
       "title": "Database Administrator",
       "start_date": "2017-08-09T12:28:39.197Z",
