@@ -2,7 +2,28 @@
   "title": "My Education and Experience",
   "description": "",
   "body": "I have listed my education and experience here",
-  "educations": [],
+  "educations": [
+    {
+      "organization": {
+        "star_date": "2022-10-01T13:55:38.008Z",
+        "end_date": "",
+        "name": "Technical University of Munich"
+      },
+      "title": "Master of Management and Technology",
+      "address": "Arcisstraße 21, 80333 München, Germany",
+      "description": "The Technical University of Munich (TUM) is ranked among the 25 best universities worldwide in several subjects."
+    },
+    {
+      "organization": {
+        "star_date": "2014-03-01T15:00:37.459Z",
+        "end_date": "2017-10-31T15:00:37.473Z",
+        "name": "Avicenna University"
+      },
+      "title": "Bachelor of Business Economics",
+      "address": "Karte 4, Kabul, Afghanistan",
+      "description": "O﻿ne of the best universities in Afghanistan."
+    }
+  ],
   "experiences": [
     {
       "organization": {
