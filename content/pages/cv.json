@@ -13,7 +13,7 @@
       "start_date": "2022-10-01T13:55:38.008Z",
       "end_date": "",
       "address": "Arcisstraße 21, 80333 München, Germany",
-      "description": "T﻿his is a new field, which is an inter disiplinary field between Managment and Technology. \\\n\nNote: The Technical University of Munich (TUM) is ranked among the 25 best universities worldwide in several subjects."
+      "description": "T﻿his is a new field, which is an inter disiplinary field between Managment and Technology.\n\nNote: The Technical University of Munich (TUM) is ranked among the 25 best universities worldwide in several subjects.\n\n<https://www.tum.de>"
     },
     {
       "organization": {
@@ -25,7 +25,7 @@
       "start_date": "2014-03-01T15:00:37.459Z",
       "end_date": "2017-10-31T15:00:37.473Z",
       "address": "Karte 4, Kabul, Afghanistan",
-      "description": "*﻿ Operation Research\n*﻿ Business Management\n*﻿ Economics\n*﻿ Marketing\n*﻿ Statistics\n*﻿ Technology and Economics"
+      "description": "* Operation Research*Business Management﻿ \n* Economics\n* Marketing \n* Statistics\n* Technology and Economics"
     }
   ],
   "experiences": [
