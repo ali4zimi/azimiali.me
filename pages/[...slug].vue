@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout>
     <div class="max-w-3xl mx-auto mt-10 px-4">
-      <main class="general prose mx-auto dark:prose-invert">
+      <main class="bio prose mx-auto dark:prose-invert">
         <ContentDoc />
       </main>
     </div>
@@ -11,24 +11,25 @@
 <style>
 
 
-  .general.prose p {
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+  .bio.prose p {
     font-size: 1.125rem;
     line-height: 2.25rem;
+    margin-top: 0.5rem;
   }
 
-  .general.prose a {
+  .bio.prose a {
     color: var(--fg-deeper);
     text-decoration: none;
     font-weight: 500;
   }
 
-   h1 {
-    font-size: 2.5rem;
-    /* font-weight: bolder; */
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 1rem;
+  .bio h1 {
+    @apply text-3xl my-0;
   }
+
+   /* h1 {
+    font-size: 2.5rem;
+    line-height: 1.2;
+    margin-bottom: 0;
+  } */
 </style>

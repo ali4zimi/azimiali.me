@@ -1,6 +1,6 @@
 ---
-title: 'Title of the page'
-description: 'meta description of the page'
+title: 'Blog - Ali Azimi'
+description: 'My posts about web development, programming, and other topics.'
 ---
 
 ::post-list

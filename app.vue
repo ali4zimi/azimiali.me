@@ -1,22 +1,11 @@
 <template>
   <ProgressBar />
-  <div class="root hidden">
+  <div class="root hidden" id="root">
     <NuxtPage />
   </div>
 </template>
 
 <script setup>
-useHead({
-  htmlAttrs: {
-    lang: 'en'
-  },
-  title: 'Ali Azimi',
-  meta: [
-    {
-      name: 'description',
-      content: 'Ali Azimi is a software engineer based in Munich.'
-    }
-  ]
-})
+
 
 </script>

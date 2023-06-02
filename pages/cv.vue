@@ -34,6 +34,16 @@
 
 <script setup>
 
+useHead({
+  title: 'CV - Ali Azimi',
+  meta: [
+    {
+      name: 'description',
+      content: 'Ali Azimi is a software engineer based in Munich.'
+    }
+  ]
+})
+
 const { data } = useAsyncData('cv', () => queryContent('pages/cv').findOne())
 
 </script>

@@ -1,3 +1,8 @@
+---
+title: 'Ali Azimi - A Web Developer'
+description: 'I am a Front-End Developer, currently pursuing a Master\''s degree in Management and Technology at the Technical University of Munich.'
+---
+
 
 # Ali Azimi
 As a highly skilled Front-End Developer with over six years of professional and freelance experience, I am
