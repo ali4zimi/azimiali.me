@@ -14,6 +14,10 @@
 
 <style>
 /* Customizing styles */
+.prose li {
+  @apply my-0
+}
+
 .tm-title {
   @apply text-xl font-semibold text-slate-600 dark:text-slate-400;
 }
