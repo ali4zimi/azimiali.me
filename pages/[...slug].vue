@@ -9,8 +9,6 @@
 </template>
 
 <style>
-
-
   .bio.prose p {
     font-size: 1.125rem;
     line-height: 2.25rem;
