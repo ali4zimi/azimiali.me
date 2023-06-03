@@ -39,6 +39,10 @@
 
                         </div>
 
+                        <div class="bg-white">
+                          Skills:
+                        </div>
+
                     </div>
                     <div class="pointer">
                         <div class="pointer-circle"></div>
@@ -91,7 +95,7 @@
 }
 
 .col {
-  @apply w-full sm:w-1/3 min-h-[200px] p-4 bg-slate-50 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer;
+  @apply w-full sm:w-1/3 min-h-[200px] p-4 bg-slate-100 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer;
 }
 
 .empty {

@@ -2,6 +2,8 @@
   <NuxtLayout>
     <div class="mx-auto mt-10">
       <main>
+
+        <SkillList />
         
         <Timline title="Education" v-if="data" :list="data.educations" />
 
