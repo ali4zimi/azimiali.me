@@ -40,7 +40,7 @@
                         </div>
 
                         <div class="bg-white">
-                          Skills:
+                          <!-- Skills: -->
                         </div>
 
                     </div>
