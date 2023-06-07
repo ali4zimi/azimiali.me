@@ -3,7 +3,7 @@
     <div class="max-w-3xl mx-auto mt-10 px-4">
       <main class="general prose mx-auto dark:prose-invert">
         <h2 class="text-2xl mb-5">Portfolio</h2>
-        <p>Under Construction</p>
+        <p>In progress: will upload my works soon</p>
         <div class="grid grid-cols-1 md:grid-cols-2 gap-4 hidden">
           <nuxt-link :to="project.link" class="figure" v-for="project in data.projects">
             <h4 class="my-1 font-bold">{{ project.name }}</h4>
