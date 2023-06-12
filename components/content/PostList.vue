@@ -1,6 +1,6 @@
 <template>
   <div class="">
-    <h2>Articles</h2>
+    <div class="text-3xl font-semibold mb-3">Articles</div>
     <ContentList path="/posts" v-slot="{ list }">
       <div class="flex flex-col gap-2">
         <nuxt-link :to="article._path" class="article title" v-for="article in articles" :key="article._path">
