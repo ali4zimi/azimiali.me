@@ -2,7 +2,7 @@
     <div class="cv-timeline">
         <div class="tm-header">
             <div class="tm-title" v-if="title">
-                {{ title  }}
+              {{ title }}
             </div>
         </div>
         <div class="relative w-full  flex flex-col gap-5 pb-10">
@@ -65,7 +65,8 @@
 }
 
 .tm-title {
-  @apply text-center py-1 px-3 text-xl border-2 border-slate-300 dark:text-slate-200 ;
+  @apply text-center py-1 px-3 border-b-2 border-slate-300 dark:text-slate-200;
+  font-size: 2.5rem;
   /* left: 50%;
   transform: translateX(-50%); */
 }
@@ -95,7 +96,7 @@
 }
 
 .col {
-  @apply w-full sm:w-1/3 min-h-[200px] p-4 bg-slate-100 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer;
+  @apply w-full sm:w-1/3 min-h-[200px] p-4 bg-slate-50 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer border dark:border-gray-900;
 }
 
 .empty {
@@ -118,7 +119,7 @@
 }
 
 .col:hover {
-  @apply bg-slate-200 dark:bg-slate-700;
+  @apply border-slate-400 dark:border-slate-500;
 }
 
 .col:hover + .pointer .pointer-circle {
@@ -126,11 +127,11 @@
 }
 
 .pointer:hover .pointer-circle {
-  @apply bg-slate-400 dark:bg-slate-900;
+  @apply bg-slate-400 dark:bg-slate-500;
 }
 
 .col:has(+ .pointer:hover) {
-  @apply bg-slate-200 dark:bg-slate-900;
+  @apply border-slate-400 dark:border-slate-500;
 }
 
 </style>

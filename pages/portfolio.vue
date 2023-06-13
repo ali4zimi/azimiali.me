@@ -15,7 +15,7 @@
 
 <style>
 .figure {
-  @apply h-[130px] py-5 px-4 bg-slate-50 dark:bg-slate-900 rounded-md cursor-pointer border dark:border-gray-900;
+  @apply h-[130px] py-5 px-4 bg-slate-50 dark:bg-gray-900 rounded-md cursor-pointer border dark:border-gray-900;
 }
 
 .figure:hover {
