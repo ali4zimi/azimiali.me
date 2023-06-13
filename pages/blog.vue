@@ -1,7 +1,7 @@
 <template>
 	<NuxtLayout>
 			<NuxtLayout name="content">
-				<div class="text-3xl font-semibold mb-3">Articles</div>
+				<h1 class="text-3xl font-semibold mb-3">Articles</h1>
 				<ContentList path="/posts" v-slot="{ list }">
 					<div class="flex flex-col gap-2">
 						<nuxt-link :to="article._path" class="article title" v-for="article in articles" :key="article._path">
@@ -19,7 +19,7 @@
 
 <style>
 .article {
-	@apply w-full py-5 px-4 bg-slate-50 border rounded-md cursor-pointer
+	@apply w-full py-5 px-4 bg-slate-50 border rounded-md shadow-md cursor-pointer
 }
 
 .dark .article {

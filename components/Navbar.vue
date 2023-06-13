@@ -1,5 +1,5 @@
 <template>
-  <div class="mobile-menuoverlay fixed top-0 left-0 bottom-0 right-0 bg-slate-100 opacity-5 dark:bg-slate-950 dark:opacity-30 z-30" v-if="isMobileMenuOpen" @click="toggleMobileMenu">
+  <div class="mobile-menuoverlay fixed top-0 left-0 bottom-0 right-0 bg-slate-200 opacity-5 dark:bg-slate-950 dark:opacity-30 z-30" v-if="isMobileMenuOpen" @click="toggleMobileMenu">
   </div>
   <div class="mobile-menu" :class="isMobileMenuOpen ? 'active' : ''">
     <ul class="mobile-menu-links">
@@ -103,7 +103,7 @@
 
 <style>
 .navbar {
-  @apply w-full py-6 px-6 bg-slate-100 flex justify-between items-center relative dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 z-50
+  @apply w-full py-6 px-6 bg-gray-200 flex justify-between items-center relative dark:bg-gray-900 border-b border-slate-200 dark:border-gray-800 z-50
 }
 
 .nav-menu {

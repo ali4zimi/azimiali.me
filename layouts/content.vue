@@ -12,19 +12,22 @@
 }
 
 .content p {
-  font-size: 1.125rem;
-  line-height: 2.25rem;
+    @apply text-slate-500 dark:text-slate-400;
+  font-size: 1.1rem;
+  line-height: 1.8rem;
   margin-top: 0.5rem;
 }
 
 .content a {
-  color: var(--fg-deeper);
+  /* color: var(--fg-deeper); */
   text-decoration: none;
   font-weight: 500;
 }
 
 .content h1 {
-  @apply text-3xl my-0;
+  @apply mb-3;
+  font-weight: 400;
+  font-size: 1.8rem;
 }
 
 /* h1 {
