@@ -28,18 +28,30 @@
   }
 
   ::-webkit-scrollbar-thumb {
-    background-color: rgba(0, 0, 0, 0.532);
+    background-color: rgba(124, 122, 122, 0.493);
     /* border-radius: 4px; */
   }
 
   ::-webkit-scrollbar-thumb:hover {
-    background-color: rgba(0, 0, 0, 0.658);
+    background-color: rgba(124, 122, 122, 0.648);
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(0, 0, 0, 0.648);
+  }
+
+  .dark ::-webkit-scrollbar-thumb {
+    background-color: rgba(255, 255, 255, 0.416);
+  }
+
+  .dark ::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(255, 255, 255, 0.758);
   }
 
   .root {
     height: 100vh;
     /* scrollbar-color: #737373 transparent;  */
-    overflow-y: overlay;
+    overflow-y: scroll;
   }
 
   main {
