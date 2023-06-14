@@ -31,11 +31,7 @@
 }
 
 .article .title {
-	@apply text-xl truncate
-}
-
-.dark .article .title {
-	@apply text-gray-100
+	@apply text-xl truncate text-slate-600 dark:text-slate-400
 }
 
 .article .publish-date {
