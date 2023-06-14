@@ -1,7 +1,7 @@
 <template>
   <NuxtLayout>
     <NuxtLayout name="content">
-        <h1 class="font-semibold mb-3">Works</h1>
+        <h1 class="mb-3">Works</h1>
         <!-- <p>In progress: will upload my works soon</p> -->
         <div class="grid grid-cols-2 gap-3">
           <nuxt-link :to="project.link" class="figure" v-for="project in data.projects">

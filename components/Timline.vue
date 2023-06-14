@@ -64,6 +64,7 @@
 
 .tm-title {
   @apply text-center py-1 px-3 border-b-2 border-slate-300 dark:text-slate-200;
+  @apply text-slate-500 dark:text-slate-400;
   font-size: 1.8rem;
   font-weight: 400;
 }
@@ -93,10 +94,6 @@
 }
 .prose li {
   @apply my-0
-}
-
-.tm-title {
-  @apply text-xl font-semibold text-slate-500 dark:text-slate-500;
 }
 
 .item-title {
