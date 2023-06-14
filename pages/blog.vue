@@ -19,7 +19,7 @@
 
 <style>
 .article {
-	@apply w-full py-5 px-4 bg-slate-50 border rounded-md shadow-md cursor-pointer
+	@apply w-full py-5 px-4 bg-slate-50 border rounded-md  cursor-pointer
 }
 
 .dark .article {
