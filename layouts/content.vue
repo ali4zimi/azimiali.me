@@ -25,10 +25,11 @@
 }
 
 .content h1 {
-  @apply mb-3;
+  @apply mb-3 text-slate-600 dark:text-slate-400;
   font-weight: 400;
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
+
 
 /* h1 {
     font-size: 2.5rem;

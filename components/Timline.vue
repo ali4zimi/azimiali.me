@@ -24,7 +24,7 @@
                                 </div>
                                 <div>
                                     <div class="item-title">{{ item.title }}</div>
-                                    <a target="_blank" :href="item.organization.website" class="text-sm">{{
+                                    <a target="_blank" :href="item.organization.website" class="item-link">{{
                                         item.organization.name }}</a>
                                 </div>
                             </div>
@@ -34,9 +34,7 @@
                         </div>
 
                         <div class="item-body mt-3">
-                            <!-- <div class="prose leading-5" v-html="$markdownToHtml(item.description)"></div> -->
                             <MarkdownRenderer class="prose" :md="item.description" />
-
                         </div>
 
                         <div class="bg-white">
@@ -55,7 +53,7 @@
     </div>
 </template>
 
-<style>
+<style scoped>
 .cv-timeline {
   @apply relative mt-10;
 }
@@ -66,9 +64,8 @@
 
 .tm-title {
   @apply text-center py-1 px-3 border-b-2 border-slate-300 dark:text-slate-200;
-  font-size: 2.5rem;
-  /* left: 50%;
-  transform: translateX(-50%); */
+  font-size: 1.8rem;
+  font-weight: 400;
 }
 
 .cv-timeline-line {
@@ -94,6 +91,33 @@
 .item {
   @apply relative w-full pl-8 sm:px-0 flex justify-center gap-[50px];
 }
+.prose li {
+  @apply my-0
+}
+
+.tm-title {
+  @apply text-xl font-semibold text-slate-500 dark:text-slate-500;
+}
+
+.item-title {
+  @apply font-semibold text-slate-500 dark:text-slate-400;
+}
+
+.prose li {
+  @apply my-0
+}
+
+.item-title {
+  @apply font-semibold text-slate-500 dark:text-slate-400;
+}
+
+.prose{
+  @apply text-slate-500 dark:text-slate-500; 
+}
+
+.item-link {
+  @apply  text-blue-400 dark:text-blue-300 dark:opacity-70 hover:underline;
+}
 
 .col {
   @apply w-[400px] sm:w-1/4 min-h-[200px] p-4 bg-slate-50 dark:bg-slate-900 dark:text-slate-200 
@@ -108,6 +132,10 @@
   100% {
     opacity: 1;
   }
+}
+
+.prose {
+  @apply leading-5
 }
 
 .col.empty {
@@ -125,9 +153,6 @@
     width: 400px;
   }
 }
-
-
-
 
 .empty {
   @apply hidden sm:block sm:invisible;

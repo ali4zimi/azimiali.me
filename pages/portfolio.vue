@@ -1,11 +1,11 @@
 <template>
   <NuxtLayout>
     <NuxtLayout name="content">
-        <h1 class="font-semibold mb-3">Portfolio</h1>
+        <h1 class="font-semibold mb-3">Works</h1>
         <!-- <p>In progress: will upload my works soon</p> -->
         <div class="grid grid-cols-2 gap-3">
           <nuxt-link :to="project.link" class="figure" v-for="project in data.projects">
-            <h4 class="my-1 font-bold">{{ project.name }}</h4>
+            <h4 class="my-1 font-semibold text-slate-600 dark:text-slate-200">{{ project.name }}</h4>
             <p class="text-sm">{{ project.description }}</p>
           </nuxt-link>
         </div>
@@ -13,7 +13,7 @@
   </NuxtLayout>
 </template>
 
-<style>
+<style scoped>
 .figure {
   @apply h-[130px] py-5 px-4 bg-slate-50 dark:bg-gray-900 rounded-md cursor-pointer border dark:border-gray-900;
 }
