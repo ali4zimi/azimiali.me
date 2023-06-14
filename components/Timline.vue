@@ -16,7 +16,7 @@
             <div class="events flex flex-col mt-5">
                 <div class="item mt-5" v-for="(item, index) in list"
                     :class="index % 2 != 0 ? 'flex-row-reverse' : ''">
-                    <div class="col">
+                    <div class="col with-contetnt">
                         <div class="item-header w-full flex justify-between gap-2">
                             <div class="flex gap-2">
                                 <div class="w-10 h-10  rounded-full flex justify-center items-center">
@@ -96,8 +96,38 @@
 }
 
 .col {
-  @apply w-full sm:w-1/3 min-h-[200px] p-4 bg-slate-50 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer border dark:border-gray-900;
+  @apply w-[400px] sm:w-1/4 min-h-[200px] p-4 bg-slate-50 dark:bg-slate-900 dark:text-slate-200 
+  rounded-md cursor-pointer border dark:border-gray-900 z-40;
+  animation: fadein 1.5s forwards;
 }
+
+@keyframes fadein {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+.col.empty {
+  @apply w-0;
+  animation-name: expand;
+  animation-delay: 1s;
+  animation: expand 1.5s forwards;
+}
+
+@keyframes expand {
+  0% {
+    width: 200px;
+  }
+  100% {
+    width: 400px;
+  }
+}
+
+
+
 
 .empty {
   @apply hidden sm:block sm:invisible;
