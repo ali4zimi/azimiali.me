@@ -1,5 +1,5 @@
 <template>
-    <div class="mt-10 px-4">
+    <div class=" mt-16 px-4">
         <main class="content prose mx-auto">
             <slot />
         </main>
