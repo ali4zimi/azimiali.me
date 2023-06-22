@@ -19,11 +19,11 @@ function collapse() {
 
 <template>
     <div>
-        <button v-if="!show" @click="expand()">Show More...</button>
-        <button v-if="show" @click="collapse()">Show Less...</button>
         <div class="details">
             <slot />
         </div>
+        <button v-if="!show" @click="expand()">Show More...</button>
+        <button v-if="show" @click="collapse()">Show Less...</button>
     </div>
 </template>
 
