@@ -12,6 +12,11 @@ module.exports = {
     "./content/**/*.{md,yml,json,yaml,toml,csv}",
     "./app.vue",
   ],
+  router: {
+    options: {
+      strict: true,
+    },
+  },
   theme: {
     extend: {
       typography: {
