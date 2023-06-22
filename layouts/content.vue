@@ -12,7 +12,7 @@
 }
 
 .content p {
-    @apply text-slate-500 dark:text-slate-400;
+  @apply text-slate-500 dark:text-slate-400;
   font-size: 1.1rem;
   line-height: 1.8rem;
   margin-top: 0.5rem;
