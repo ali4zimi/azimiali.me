@@ -5,7 +5,7 @@
         <!-- <p>In progress: will upload my works soon</p> -->
         <div class="grid grid-cols-2 gap-3">
           <nuxt-link :to="project.link" class="figure" v-for="project in data.projects">
-            <h4 class="my-1 font-semibold text-slate-600 dark:text-slate-200">{{ project.name }}</h4>
+            <h3 class="my-1 text-slate-600 dark:text-slate-400">{{ project.name }}</h3>
             <p class="text-sm">{{ project.description }}</p>
           </nuxt-link>
         </div>
