@@ -15,28 +15,20 @@
 </style>
 
 <script setup>
-const nuxtApp = useNuxtApp();
+const router = useRouter()
 
-onBeforeMount(() => {
-  const loader = document.querySelector(".loader");
-  //set width to 100%;
-  loader.style.width = "10%";
-});
-
-nuxtApp.hook("page:start", () => {
+router.beforeEach(() => {
   const loader = document.querySelector(".loader");
   loader.classList.remove("hidden");
   loader.style.width = "10%";
-  setTimeout(() => {
-    loader.style.width = "40%";
-  }, 1000);
-});
+})
 
-nuxtApp.hook("page:finish", () => {
+router.afterEach(() => {
   const loader = document.querySelector(".loader");
   loader.style.width = "100%";
   setTimeout(() => {
     loader.classList.add("hidden");
+    loader.style.width = "0%";
   }, 1000);
-});
+})
 </script>
