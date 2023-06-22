@@ -1,5 +1,5 @@
 <template>
-  <div class="loader bg-slate-300"></div>
+  <div class="loader"></div>
 </template>
 
 <style>
@@ -7,7 +7,8 @@
   position: fixed;
   top: 0;
   left: 0;
-  height: 2px;
+  height: 3px;
+  background-color: #acaeac;
   z-index: 9999;
   transition: width 0.3s ease-in-out;
   width: 0%;
