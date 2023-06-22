@@ -9,18 +9,17 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "^1.15.1",
-    "@nuxt/devtools": "^0.0.1",
+    "@nuxt/content": "^2.6.0",
+    "@nuxt/devtools": "^0.4.6",
     "@nuxthq/ui": "^2.1.0",
     "@nuxtjs/tailwindcss": "^6.6.7",
     "@tailwindcss/typography": "^0.5.9",
-    "@types/node": "^20.3.1",
+    "@types/node": "^18",
     "@vueuse/core": "^10.1.2",
     "@vueuse/nuxt": "^7.5.1",
-    "nuxt": "^2.17.0"
+    "nuxt": "^3.4.3"
   },
   "dependencies": {
-    "normalize.css": "^8.0.1",
-    "nuxt-content": "^0.1.1"
+    "normalize.css": "^8.0.1"
   }
 }
