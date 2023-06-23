@@ -1,13 +1,16 @@
 <template>
   <NuxtLayout>
+    <!-- CV is not using content layout -->
     <div class="mx-auto mt-10">
+
+      <ScrollDownArrow />
+
       <main>
-
         <!-- <SkillList /> -->
-        
-        <Timline title="Education" v-if="data" :list="data.educations" />
 
-        <Timline title="Experience" v-if="data" :list="data.experiences" />
+        <CvTimline title="Education" v-if="data" :list="data.educations" />
+
+        <CvTimline title="Experience" v-if="data" :list="data.experiences" />
 
       </main>
     </div>
@@ -15,8 +18,6 @@
 </template>
 
 <style>
-/* Customizing styles */
-
 
 </style>
 
@@ -32,6 +33,6 @@ useHead({
   ]
 })
 
-const { data } = useAsyncData('cv', () => queryContent('pages/cv').findOne())
+const { data } = useAsyncData('cv', () => queryContent('pages/cv').findOne());
 
 </script>
