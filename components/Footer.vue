@@ -1,10 +1,7 @@
-<script setup>
-
-</script>
-
 <template>
     <div class="absolute bottom-4 w-full pb-3 z-40">
-        <div class="max-w-xl mx-auto flex flex-col gap-2 text-slate-600 border-t pt-3">
+        <div class="max-w-xl mx-auto pt-3 flex flex-col gap-2 text-slate-600 dark:text-slate-400 ">
+            <div class="w-1/2 h-[1px] mx-auto my-2 bg-slate-400 dark:bg-slate-700"></div>
             <div class="text-center">&copy 2023 Ali Azimi</div>
             <ul class="flex gap-3 justify-center">
                 <li>
