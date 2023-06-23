@@ -57,7 +57,7 @@ function scrollTop() {
 }
 
 .scroll-down-arrow {
-  @apply  mb-5 cursor-pointer animate-bounce text-slate-500;
+  @apply  mb-2 cursor-pointer animate-bounce text-slate-500;
   margin-left: -7px;
 }
 
