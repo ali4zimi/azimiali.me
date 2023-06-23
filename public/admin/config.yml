@@ -1,3 +1,4 @@
+local_backend: true
 backend:
   name: git-gateway
 
@@ -23,6 +24,14 @@ collections:
   - label: Pages
     name: pages
     files: 
+      - label: Home
+        name: index
+        file: content/index.md
+        fields:
+          - {label: Title, name: title, widget: string}
+          - {label: Description, name: description, widget: text, required: false}
+          - {label: Body, name: body, widget: markdown}
+
       - label: Portfolio
         name: portfolio
         file: content/pages/portfolio.json
