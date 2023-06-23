@@ -14,40 +14,7 @@
             </div>
 
             <div class="events flex flex-col mt-5">
-                <div class="item mt-5" v-for="(item, index) in list"
-                    :class="index % 2 != 0 ? 'flex-row-reverse' : ''">
-                    <div class="col with-contetnt">
-                        <div class="item-header w-full flex justify-between gap-2">
-                            <div class="flex gap-2">
-                                <div class="w-10 h-10  rounded-full flex justify-center items-center">
-                                    <img :src="item.organization.icon" />
-                                </div>
-                                <div>
-                                    <div class="item-title">{{ item.title }}</div>
-                                    <a target="_blank" :href="item.organization.website" class="item-link">{{
-                                        item.organization.name }}</a>
-                                </div>
-                            </div>
-                            <div>
-                                <div class="text-sm">{{ formatDate(item.start_date) }}</div>
-                            </div>
-                        </div>
-
-                        <div class="item-body mt-3">
-                            <MarkdownRenderer class="prose" :md="item.description" />
-                        </div>
-
-                        <div class="bg-white">
-                          <!-- Skills: -->
-                        </div>
-
-                    </div>
-                    <div class="pointer">
-                        <div class="pointer-circle"></div>
-                    </div>
-                    <div class="col empty">
-                    </div>
-                </div>
+                <TimlineItem :item="item" :index="index" v-for="(item, index) in list" />
             </div>
         </div>
     </div>
@@ -89,28 +56,6 @@
   transform: translateX(-50%);
 }
 
-.item {
-  @apply relative w-full pl-8 sm:px-0 flex justify-center gap-[50px];
-}
-.prose li {
-  @apply my-0
-}
-
-.item-title {
-  @apply font-semibold text-slate-500 dark:text-slate-400;
-}
-
-.prose li {
-  @apply my-0
-}
-
-.item-title {
-  @apply font-semibold text-slate-500 dark:text-slate-400;
-}
-
-.prose{
-  @apply text-slate-500 dark:text-slate-500; 
-}
 
 .item-link {
   @apply  text-blue-400 dark:text-blue-300 dark:opacity-70 hover:underline;
