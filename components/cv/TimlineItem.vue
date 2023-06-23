@@ -22,7 +22,7 @@ const transformMarkdown = async (content) => {
 </script>
 
 <template>
-  <div class="item mt-5" :class="index % 2 != 0 ? 'flex-row-reverse' : ''">
+  <div class="item mt-5" :class="index % 2 != 0 ? 'sm:flex-row-reverse' : ''">
     <div class="col">
       <div class="item-header w-full flex justify-between gap-2">
         <div class="flex gap-2">
@@ -71,7 +71,7 @@ const transformMarkdown = async (content) => {
 
 <style scoped>
 .item {
-  @apply relative w-full pl-8 sm:px-0 flex justify-center gap-[50px];
+  @apply relative w-full pl-8 sm:px-0 flex justify-start sm:justify-center gap-[50px];
 }
 
 .item-title {
@@ -83,8 +83,8 @@ const transformMarkdown = async (content) => {
 }
 
 .col {
-  @apply relative w-[400px] sm:w-1/4 max-h-[400px] p-4 pb-2 overflow-hidden
-  bg-slate-50 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer border dark:border-gray-900 z-40;
+  @apply relative w-full sm:w-1/4 max-h-[400px] p-4 pb-2 overflow-hidden
+  bg-slate-50 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer border dark:border-gray-900 ;
   animation: fadein 1.5s forwards;
 }
 
@@ -100,12 +100,12 @@ const transformMarkdown = async (content) => {
 .col:has(+ .pointer:hover) {
   @apply border-slate-400 dark:border-slate-500;
 }
-.col.empty {
+/* .col.empty {
   @apply w-0;
   animation-name: expand;
   animation-delay: 1s;
   animation: expand 1.5s forwards;
-}
+} */
 
 .col-show-more {
   @apply absolute bottom-0 left-0 w-full px-4 py-1 pt-5 h-14 flex items-end

@@ -63,7 +63,7 @@
 
 .col {
   @apply w-[400px] sm:w-1/4 min-h-[200px] p-4 bg-slate-50 dark:bg-slate-900 dark:text-slate-200 
-  rounded-md cursor-pointer border dark:border-gray-900 z-40;
+  rounded-md cursor-pointer border dark:border-gray-900 z-30;
   animation: fadein 1.5s forwards;
 }
 
