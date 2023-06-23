@@ -62,7 +62,7 @@ function scrollTop() {
 }
 
 .scroll-top-arrow {
-  @apply  mb-5 cursor-pointer text-slate-500;
+  @apply  mb-14 cursor-pointer text-slate-400 hover:text-slate-500 animate-pulse hover:animate-none;
   margin-left: -7px;
 }
 </style>
