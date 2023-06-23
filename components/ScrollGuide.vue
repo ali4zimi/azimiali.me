@@ -52,7 +52,7 @@ function scrollTop() {
 
 <style scoped>
 .scroll-arrow {
-  @apply fixed bottom-0 left-0 right-0 z-50
+  @apply fixed bottom-0 left-0 right-0 z-30
   flex justify-center items-center
 }
 
@@ -62,7 +62,7 @@ function scrollTop() {
 }
 
 .scroll-top-arrow {
-  @apply  mb-14 cursor-pointer text-slate-400 hover:text-slate-500 animate-pulse hover:animate-none;
+  @apply  mb-28 cursor-pointer text-slate-400 hover:text-slate-500 animate-pulse hover:animate-none;
   margin-left: -7px;
 }
 </style>
