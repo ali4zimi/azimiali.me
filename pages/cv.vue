@@ -3,7 +3,7 @@
     <!-- CV is not using content layout -->
     <div class="mx-auto mt-10">
 
-      <ScrollDownArrow />
+      <ScrollGuide />
 
       <main>
         <!-- <SkillList /> -->

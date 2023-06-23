@@ -44,7 +44,7 @@ function scrollTop() {
       </svg>
     </div>
 
-    <div class="scroll-top-arrow" v-else @click="scrollTop">
+    <div title="Scroll back to the top" class="scroll-top-arrow" v-else @click="scrollTop">
       <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 15 15"><path fill="currentColor" fill-rule="evenodd" d="M7.5 15a7.5 7.5 0 1 1 0-15a7.5 7.5 0 0 1 0 15ZM4.793 6.5L7.5 3.793L10.207 6.5l-.707.707l-1.5-1.5V11H7V5.707l-1.5 1.5l-.707-.707Z" clip-rule="evenodd"/></svg>
     </div>
   </div>
@@ -57,13 +57,12 @@ function scrollTop() {
 }
 
 .scroll-down-arrow {
-  @apply  mb-5 cursor-pointer;
+  @apply  mb-5 cursor-pointer animate-bounce text-slate-500;
   margin-left: -7px;
-  animation: bounce 1s infinite;
 }
 
 .scroll-top-arrow {
-  @apply  mb-5 cursor-pointer;
+  @apply  mb-5 cursor-pointer text-slate-500;
   margin-left: -7px;
 }
 </style>
