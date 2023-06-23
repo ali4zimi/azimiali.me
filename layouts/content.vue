@@ -19,7 +19,7 @@
 }
 
 .content a {
-  /* color: var(--fg-deeper); */
+  @apply text-slate-600 dark:text-slate-400;
   text-decoration: none;
   font-weight: 500;
 }
@@ -30,6 +30,9 @@
   font-size: 2rem;
 }
 
+.content strong {
+  @apply text-slate-600 dark:text-slate-400;
+}
 
 /* h1 {
     font-size: 2.5rem;
