@@ -49,9 +49,7 @@ const transformMarkdown = async (content) => {
       </div>
 
       <div class="col-show-mored flex justify-center pt-3">
-        <div title="show more..." class="text-slate-400 p-1 rounded-full opacity- animate-bounce">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"><path d="m19 11l-7 6l-7-6"/><path d="m19 7l-7 6l-7-6" opacity=".5"/></g></svg>
-        </div>
+
 
 
 
