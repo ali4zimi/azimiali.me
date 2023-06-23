@@ -58,6 +58,9 @@
     animation: fadeIn 1.5s ease-out;
   }
 
+  .cv-timeline .prose strong {
+    @apply text-slate-500 text-sm
+  }
 
   @keyframes fadeIn {
     0% {
