@@ -1,13 +1,12 @@
 <template>
-  <div class="mobile-menuoverlay fixed top-0 left-0 bottom-0 right-0 bg-slate-200 opacity-5 dark:bg-slate-950 dark:opacity-30 z-50"  v-if="isMobileMenuOpen" @click="toggleMobileMenu">
+  <div class="mobile-menuoverlay fixed top-0 left-0 bottom-0 right-0 bg-slate-200 opacity-5 dark:bg-slate-950 dark:opacity-30 z-30"  v-if="isMobileMenuOpen" @click="toggleMobileMenu">
   </div>
-  <div class="mobile-menu z-40" :class="isMobileMenuOpen ? 'active' : ''">
+  <div class="mobile-menu fixed z-40" :class="isMobileMenuOpen ? 'active' : ''">
     <ul class="mobile-menu-links">
       <li v-for="link in links">
         <nuxt-link :to="link.path">{{ link.name }}</nuxt-link>
       </li>
     </ul>
-
   </div>
   <nav class="navbar">
     <div class="flex items-center gap-3">
