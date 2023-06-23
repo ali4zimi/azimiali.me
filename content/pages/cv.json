@@ -31,35 +31,49 @@
   "experiences": [
     {
       "organization": {
-        "name": "PI Manufacturing Company",
-        "icon": "/images/pi-logo.png",
-        "website": "https://poshakistanbul.af/"
+        "name": "Mehran Restaurant & Catering",
+        "icon": "/images/mehran.png",
+        "website": "https://www.mehran.af",
+        "address": "Pole-Sorkh Sq, Kabul, Afghanistan"
       },
-      "title": " Database and Application Manager",
-      "start_date": "2018-05-15T12:23:53.286Z",
-      "end_date": "2022-02-26T13:23:53.296Z",
-      "address": "Karte 4, Kabul, Afghanistan",
-      "description": "* Designing and developing and managing databases and applications\n* Discovering organization needs and providing a suitable solution\n* Leading team to provide solutions based on organizational need\n* Developing modules for each department and integrating them with other modules\n* Writing documentation for all updates in the application\n* Database maintenance and backup\n* Develop a database for departments to facilitate communication and data centralization\n* Troubleshoot hardware and software issues, and perform maintenance such as driver installation of manufacturing machines\n* Test new technologies by reading their manuals\n* Training users"
+      "title": "Database and Digital Marketing Specialist",
+      "start_date": "2019-08-01T12:28:39.197Z",
+      "end_date": "2022-02-28T13:28:39.207Z",
+      "address": "Pole-e-Sorkh Square, Kabul, Afghanistan",
+      "description": "As a Database and Digital Marketing Specialist, I was hired by a newly established restaurant and catering service to configure their database system and establish their online presence. My role encompassed setting up and managing the database system, eZee BurrP, which served as an expensive enterprise system specifically designed for catering operations. Additionally, I took charge of developing the restaurant's website, creating online menus, and launching its social media platforms.\n\n**Key Responsibilities:**\n\n1. Install and configure the eZee BurrP database system, tailored to the restaurant's requirements.\n2. Integrate the restaurant's menu with the digital menu within the eZee BurrP system.\n3. Develop and set up a payroll system within the database, ensuring synchronization.\n4. Create and maintain accurate inventories in the database, reflecting real-time stock levels.\n5. Design and implement catering and banquet systems, customized to the eZee BurrP platform.\n6. Launch and develop the restaurant's website and online menu using modern web technologies.\n7. Establish and manage the restaurant's social media pages for marketing purposes.\n8. Utilize marketing strategies and advertising techniques to increase social media engagement.\n\n**Achievements:**\n\n1. Built a single-page application (SPA) website and online menu using modern web technologies.\n2. Successfully configured the eZee BurrP database system to optimize restaurant operations.\n3. Increased engagement and visibility on the restaurant's social media pages through effective marketing strategies."
     },
     {
       "organization": {
-        "name": "Mehran Restaurant & Catering",
-        "icon": "/images/mehran.png",
-        "website": "https://www.mehran.af"
+        "name": "PI Manufacturing Company",
+        "icon": "/images/pi-logo.png",
+        "website": "https://poshakistanbul.af/",
+        "address": "Karte 4, Kabul, Afghanistan"
       },
-      "title": "Database Administrator",
-      "start_date": "2017-08-09T12:28:39.197Z",
-      "end_date": "2018-05-10T12:28:39.207Z",
-      "address": "Pole-e-Sorkh Square, Kabul, Afghanistan",
-      "description": "* Configuration and setup of the Restaurant Application, e.g. eZee Burp\n* Dealing with finance staff modules of the Application e.g. Payroll System\n* Website content manager using WordPress \n* Applying suitable plugins for the website\n* Customizations of the theme using HTML, JavaScript, and CSS\n  Subtasks:\n* Advising the social media department about how to increase attractions\n* Social media advertisement"
+      "title": "Digital Marketing Manager",
+      "start_date": "2017-05-01T12:23:53.286Z",
+      "end_date": "2019-07-20T12:23:53.296Z",
+      "address": "Karte 4, Kabul, Afghanistan",
+      "description": "As a content manager, I was in charge of uploading new content to the company's website and social media networks. By maintaining an up-to-date and engaging online presence, I successfully attracted and retained a growing number of followers on social media platforms. As I was a professional in web development, I decided to redesign the website.\n\n**Key Responsibilities:**\n\n1. Developing the website in Laravel framework to make optimize speed\n2. Creating daily content on the website, and also for the bugs\n3. Manage social media platforms, including launching and maintaining pages on various networks.\n4. Execute marketing campaigns on social media platforms to increase engagement and attract a larger audience.\n5. Create and maintain a content calendar to ensure consistent and timely delivery of content.\n\n**Achievements:**\n\n1. Successfully migrated the company's website from WordPress to the Laravel framework, resulting in improved speed and performance."
+    },
+    {
+      "start_date": "2016-02-01T15:12:20.353Z",
+      "end_date": "2017-04-30T14:12:20.370Z",
+      "organization": {
+        "name": "PI Manufacturing Company",
+        "icon": "/images/pi-logo.png",
+        "website": "https://poshakistanbul.af/",
+        "address": "Karte 4, Kabul, Afghanistan"
+      },
+      "description": "As an IT Operations and Systems Manager, I was responsible for managing and maintaining all devices within the company. My role involved installing and upgrading operating systems, as well as installing and updating software applications. I also provided guidance to employees on how to effectively utilize new software and devices, ensuring a smooth transition and optimal productivity.\n\n**Key Responsibilities:**\n\n* Managed and maintained devices, including operating system installations and upgrades, as well as software installations and updates.\n* Provided guidance and training to employees on the usage of new software and devices.\n* Configured and set up network infrastructure, including routers, switches, and MikroTik devices.\n* Controlled and configured biometric devices and software for secure employee authentication.\n* Installed and configured security cameras for remote surveillance via smartphones.\n* Oversaw data storage and backup solutions, including cloud storage.\n* Ensured the smooth operation of IT systems and promptly resolved any issues.\n\n**Achievements:**\n\n* Rescued and migrated biometric data for 300 employees during a critical system failure.",
+      "title": "IT OPERATIONS AND SYSTEMS MANAGER"
     },
     {
       "organization": {
         "name": "DEM Group of Companies"
       },
-      "title": " Web Developer",
-      "start_date": "2023-05-30T12:32:08.713Z",
-      "end_date": "2023-05-30T12:32:08.725Z",
+      "title": " Web Content Manager",
+      "start_date": "2015-07-01T12:32:08.713Z",
+      "end_date": "2016-01-15T13:32:08.725Z",
       "description": "* Managing and posting content\n* Photography of products and uploading them to the website and social media pages\n* Other IT tasks",
       "address": "Darulaman St, District 6, Kabul, Afghanistan"
     }
