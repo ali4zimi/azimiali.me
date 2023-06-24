@@ -10,7 +10,7 @@
             <div class="technologies-used absolute bottom-3">
               <div class="text-slate-600 dark:text-slate-400 text-sm uppercase mt-5">Technologies used:</div>
               <div class="flex gap-1">
-                <span v-for="technology in project.technologies" class="p-1 text-xs rounded-md text-slate-600 dark:text-slate-600 bg-slate-300 dark:bg-slate-200">{{ technology }}</span>
+                <span v-for="technology in project.technologies" class="p-1 text-xs rounded-sm text-slate-200 dark:text-slate-400d bg-slate-800 dark:bg-slate-500">{{ technology }}</span>
               </div>
             </div>
           </nuxt-link>
@@ -21,7 +21,7 @@
 
 <style scoped>
 .figure {
-  @apply relative h-[200px] py-5 px-4 bg-slate-50 dark:bg-gray-900 rounded-md cursor-pointer border dark:border-gray-900;
+  @apply relative h-[170px] py-5 px-4 bg-slate-50 dark:bg-gray-900 rounded-md cursor-pointer border dark:border-gray-900;
 }
 
 .figure:hover {
