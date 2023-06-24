@@ -30,7 +30,7 @@
 }
 
 .tm-title {
-  @apply text-center py-1 px-3 border-b-2 border-slate-300 dark:text-slate-200;
+  @apply text-center sm:py-1 sm:px-3 border-b-2 border-slate-300 dark:text-slate-200;
   @apply text-slate-500 dark:text-slate-400;
   font-size: 1.8rem;
   font-weight: 400;
@@ -130,6 +130,7 @@
 </style>
 
 <script setup>
+
 // define props
 
 const props = defineProps({
@@ -143,16 +144,22 @@ const props = defineProps({
     }
 })
 
-const formatDate = (date) => {
-  // format like MMM YYYY
-  const options = { year: 'numeric', month: 'short' };
-  return new Date(date).toLocaleDateString('en-US', options);
-}
 
-// import markdownParser from '@nuxt/content/transformers/markdown'
 
-const transformMarkdown = async (content) => {
-  return await markdownParser.parse('<setup-id>', content)
-}
+
+
+// onMounted(() => {
+//   const cols = document.querySelectorAll('.col-content')
+
+
+//   cols.forEach((col, index) => {
+//     const showMoreLink = col.querySelector('.details')
+
+    
+//     if (col.scrollHeight > col.clientHeight + 10) {
+//       // showMoreLink.classList.remove('hidden')
+//     }
+//   })
+// })
 
 </script>

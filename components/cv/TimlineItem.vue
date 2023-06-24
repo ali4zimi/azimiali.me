@@ -11,32 +11,34 @@ const props = defineProps({
 })
 
 const formatDate = (date) => {
+  // format like MMM YYYY
   const options = { year: 'numeric', month: 'short' };
   return new Date(date).toLocaleDateString('en-US', options);
 }
 
+// import markdownParser from '@nuxt/content/transformers/markdown'
+
 const transformMarkdown = async (content) => {
   return await markdownParser.parse('<setup-id>', content)
 }
-
 </script>
 
 <template>
   <div class="item mt-5" :class="index % 2 != 0 ? 'sm:flex-row-reverse' : ''">
-    <div class="col">
+    <div class="col col-content">
       <div class="item-header w-full flex justify-between gap-2">
         <div class="flex gap-2">
-          <div class="w-10 h-10  rounded-full flex justify-center items-center">
+          <div class="w-10 h-10 rounded-full flex justify-center items-center">
             <img :src="item.organization.icon" />
           </div>
           <div>
             <div class="item-title">{{ item.title }}</div>
-            <a target="_blank" :href="item.organization.website" class="org-link">{{
+            <a target="_blank" v-if="item.organization.website" :href="item.organization.website" class="org-link">{{
               item.organization.name }}</a>
           </div>
         </div>
         <div>
-          <div class="text-sm">{{ formatDate(item.start_date) }}</div>
+          <div class="text-sm sm:hidden">{{ formatDate(item.start_date) }}</div>
         </div>
       </div>
 
@@ -48,23 +50,18 @@ const transformMarkdown = async (content) => {
         <!-- <CvSkillsBar /> -->
       </div>
 
-      <div class="col-show-mored flex justify-center pt-3">
-
-
-
-
-        <!-- <div class="show-more-btn text-slate-400">
-          Show more...
-        </div>
-        <div class="show-less-btn text-slate-400">
-          Show less...
-        </div> -->
-      </div>
+      <!-- <div class="show-more-link absolute bottom-0 left-0 right-0 hidden">
+        da
+      </div> -->
     </div>
     <div class="pointer">
       <div class="pointer-circle"></div>
     </div>
-    <div class="col empty">
+    <div class="col empty flex flex-col p-0" >
+      <div class="item-date" :class="index % 2 != 0 ? 'place-self-end' : 'place-self-start'">
+        {{ formatDate(item.start_date) }} - 
+        {{ item.end_date ? formatDate(item.end_date) : 'Present' }}
+      </div>
     </div>
   </div>
 </template>
@@ -83,9 +80,12 @@ const transformMarkdown = async (content) => {
 }
 
 .col {
-  @apply relative w-full sm:w-1/4 max-h-[400px] p-4 pb-2 overflow-hidden
-  bg-slate-50 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer border dark:border-gray-900 ;
+  @apply relative w-full sm:w-1/4 min-h-[200px] p-4 pb-2 overflow-hidden;
   animation: fadein 1.5s forwards;
+}
+
+.col-content {
+  @apply bg-slate-50 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer border dark:border-gray-900 ;
 }
 
 .col:hover {
@@ -158,8 +158,8 @@ const transformMarkdown = async (content) => {
 }
 
 .prose strong {
-    @apply text-slate-500
-  }
+  @apply text-slate-500
+}
 
 .pointer {
   @apply w-5 h-5 top-5 absolute bg-slate-300 dark:bg-slate-300 rounded-full z-20 cursor-pointer left-[10px] sm:left-[50%];
@@ -179,7 +179,11 @@ const transformMarkdown = async (content) => {
 }
 
 .empty {
-  @apply hidden sm:block sm:invisible;
+  @apply  hidden  sm:flex;  
+}
+
+.item-date {
+  @apply w-fit px-1 mt-1 rounded-md bg-slate-200 dark:bg-slate-400 hidden sm:block;
 }
 
 </style>
