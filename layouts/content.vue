@@ -11,6 +11,13 @@
   @apply max-w-xl
 }
 
+
+.content h1 {
+  @apply mb-3 text-slate-600 dark:text-slate-400;
+  font-weight: 400;
+  font-size: 2rem;
+}
+
 .content p {
   @apply text-slate-600 dark:text-slate-400;
   font-size: 1.1rem;
@@ -24,13 +31,15 @@
   font-weight: 500;
 }
 
-.content h1 {
-  @apply mb-3 text-slate-600 dark:text-slate-400;
-  font-weight: 400;
-  font-size: 2rem;
+.content strong {
+  @apply text-slate-600 dark:text-slate-400;
 }
 
-.content strong {
+.content ul {
+  @apply list-disc list-inside;
+}
+
+.content li {
   @apply text-slate-600 dark:text-slate-400;
 }
 
