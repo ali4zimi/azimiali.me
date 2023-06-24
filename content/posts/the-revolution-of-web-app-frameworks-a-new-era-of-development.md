@@ -2,7 +2,7 @@
 title: "The Revolution of Web App Frameworks: A New Era of Development"
 description: "The Revolution of Web App Frameworks: A New Era of Development"
 language: en
-date: 2023-05-13T14:30:13.881Z
+publish_date: 2023-05-13T14:30:13.881Z
 ---
 
 

@@ -6,9 +6,21 @@
 					<div class="flex flex-col gap-2">
 						<nuxt-link :to="article._path" class="article title" v-for="article in articles" :key="article._path">
 							<div class="title">{{ article.title }}</div>
-							<div class="text-sm pt-3">
-								<span class="text-slate-600">Published: </span>
-								<span class="text-slate-400">{{ formatDate(article.date) }}</span>
+							<div class="flex gap-5">
+								<div class="text-sm pt-3">
+									<span class="text-slate-600 uppercase">Published: </span>
+									<span class="text-slate-400">{{ formatDate(article.publish_date) }}</span>
+								</div>
+								<div class="text-sm pt-3">
+									<span class="text-slate-600 uppercase">Lang: </span>
+									<span class="text-slate-400">English</span>
+								</div>
+								<!-- <div class="text-sm pt-3">
+									<span class="text-slate-600 uppercase">Category: </span>
+									<span class="text-slate-400">
+										<span class="px-1 text-xs rounded-sm text-slate-200 dark:text-slate-400d bg-slate-800 dark:bg-slate-500">Frontend</span>
+									</span>
+								</div> -->
 							</div>
 						</nuxt-link>
 					</div>

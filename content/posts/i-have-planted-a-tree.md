@@ -3,7 +3,7 @@ title: I have planted a tree
 description: Microsoft is green and is supporting this campaign. You can also
   plant your tree by using Microsoft Edge Browser
 language: en
-date: 2023-05-20T16:04:00.000Z
+publish_date: 2023-05-20T16:04:00.000Z
 ---
 You might see a tiny sidebar to the right side of your Microsoft Edge browser if you updated it to the latest version. That is a helpful sidebar where you can use Bing AI mode and DALL-E directly from there. Apart from that you can see a green tree logo called E-Tree. 
 

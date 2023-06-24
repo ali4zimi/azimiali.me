@@ -1,7 +1,7 @@
 ---
 title: Getting Started with Node.js
 language: en
-date: 2023-05-13T14:33:06.444Z
+publish_date: 2023-05-13T14:33:06.444Z
 ---
 
 Node.js is a powerful JavaScript runtime that allows you to build scalable and high-performance applications on the server side. In this tutorial, we will guide you through the process of installing Node.js and creating a simple "Hello, World!" application.
