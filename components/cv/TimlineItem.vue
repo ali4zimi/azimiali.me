@@ -72,7 +72,7 @@ const transformMarkdown = async (content) => {
 }
 
 .item-title {
-  @apply font-semibold text-slate-500 dark:text-slate-400;
+  @apply font-semibold text-slate-600 dark:text-slate-300;
 }
 
 .org-link {
@@ -150,7 +150,7 @@ const transformMarkdown = async (content) => {
 }
 
 .prose {
-  @apply leading-5 text-slate-500 dark:text-slate-500;
+  @apply leading-7 text-slate-600 dark:text-slate-300 text-sm;
 }
 
 .prose li {

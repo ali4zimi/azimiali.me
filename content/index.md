@@ -5,9 +5,7 @@ description: 'I am a Front-End Developer, currently pursuing a Master\''s degree
 
 
 # Welcome!
-**I am Ali Azimi.**
-
-I design and develop websites, and I love open-source projects. Currently, I study at the [Technical University of Munich](https://tum.de){:target="_blank"}. 
+I am [Ali Azimi](https://github.com/ali4zimi), and I build websites and open-source projects. Currently, I study at the [Technical University of Munich](https://tum.de){:target="_blank"}. 
 
 I can say that I have been a computer geek and I have been interested in computers since I was a child. I designed a computer game when I was 12 years old. 
 
