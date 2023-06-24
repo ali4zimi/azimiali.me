@@ -30,6 +30,17 @@
   ],
   "experiences": [
     {
+      "start_date": "2023-06-23T21:34:51.299Z",
+      "end_date": "2023-06-23T21:34:51.312Z",
+      "description": "As a Freelancer and Opensource Contributor, my work involves leveraging my skills and expertise in various domains to provide freelance services and actively contribute to open-source projects. I am interested in these technologies:\n\n* JavaScript, TypeScript\n* Java, PHP\n* Google Cloud, MySQL, MongoDB\n* Vue.js, React.js, Nuxt.js\n\nWith expertise in these technologies and frameworks, I offer versatile freelance services and contribute effectively to open-source projects.",
+      "organization": {
+        "address": "Munich, Germany",
+        "website": "",
+        "name": "Self-employed "
+      },
+      "title": "Freelancer & Open Source Contributor"
+    },
+    {
       "organization": {
         "name": "Mehran Restaurant & Catering",
         "icon": "/images/mehran.png",
@@ -40,7 +51,7 @@
       "start_date": "2019-08-01T12:28:39.197Z",
       "end_date": "2022-02-28T13:28:39.207Z",
       "address": "Pole-e-Sorkh Square, Kabul, Afghanistan",
-      "description": "As a Database and Digital Marketing Specialist, I was hired by a newly established restaurant and catering service to configure their database system and establish their online presence. My role encompassed setting up and managing the database system, eZee BurrP, which served as an expensive enterprise system specifically designed for catering operations. Additionally, I took charge of developing the restaurant's website, creating online menus, and launching its social media platforms.\n\n**Key Responsibilities:**\n1. Install and configure the eZee BurrP database system, tailored to the restaurant's requirements.\n2. Integrate the restaurant's menu with the digital menu within the eZee BurrP system.\n3. Develop and set up a payroll system within the database, ensuring synchronization.\n4. Create and maintain accurate inventories in the database, reflecting real-time stock levels.\n5. Design and implement catering and banquet systems, customized to the eZee BurrP platform.\n6. Launch and develop the restaurant's website and online menu using modern web technologies.\n7. Establish and manage the restaurant's social media pages for marketing purposes.\n8. Utilize marketing strategies and advertising techniques to increase social media engagement.\n\n**Achievements:**\n1. Built a single-page application (SPA) website and online menu using modern web technologies.\n2. Successfully configured the eZee BurrP database system to optimize restaurant operations.\n3. Increased engagement and visibility on the restaurant's social media pages through effective marketing strategies.\n"
+      "description": "As a Database and Digital Marketing Specialist,  my role encompassed setting up and managing the database system, eZee BurrP, which served as an expensive enterprise system specifically designed for catering operations. Additionally, I took charge of developing the restaurant's website, creating online menus, and launching its social media platforms.\n\n**Key Responsibilities:**\n\n* Install and configure the eZee BurrP database system, tailored to the restaurant's requirements.\n* Integrate the restaurant's menu with the digital menu within the eZee BurrP system.\n* Develop and set up a payroll system within the database, ensuring synchronization.\n* Create and maintain accurate inventories in the database, reflecting real-time stock levels.\n* Design and implement catering and banquet systems, customized to the eZee BurrP platform.\n* Launch and develop the restaurant's website and online menu using modern web technologies.\n* Establish and manage the restaurant's social media pages for marketing purposes.\n* Utilize marketing strategies and advertising techniques to increase social media engagement.\n\n**Achievements:**\n\n* I was hired by a newly established restaurant and catering service to configure their database system and establish their online presence while many others couldn't, and I did it.\n* Built a single-page application (SPA) website and online menu using modern web technologies.\n* Successfully configured the eZee BurrP database system to optimize restaurant operations.\n* Increased engagement and visibility on the restaurant's social media pages through effective marketing strategies."
     },
     {
       "organization": {
@@ -53,7 +64,7 @@
       "start_date": "2017-05-01T12:23:53.286Z",
       "end_date": "2019-07-20T12:23:53.296Z",
       "address": "Karte 4, Kabul, Afghanistan",
-      "description": "As a content manager, I was in charge of uploading new content to the company's website and social media networks. By maintaining an up-to-date and engaging online presence, I successfully attracted and retained a growing number of followers on social media platforms. As I was a professional in web development, I decided to redesign the website.\n\n**Key Responsibilities:**\n\n1. Developing the website in Laravel framework to make optimize speed\n2. Creating daily content on the website, and also for the bugs\n3. Manage social media platforms, including launching and maintaining pages on various networks.\n4. Execute marketing campaigns on social media platforms to increase engagement and attract a larger audience.\n5. Create and maintain a content calendar to ensure consistent and timely delivery of content.\n\n**Achievements:**\n\n1. Successfully migrated the company's website from WordPress to the Laravel framework, resulting in improved speed and performance.\n"
+      "description": "As a content manager, I was in charge of uploading new content to the company's website and social media networks. By maintaining an up-to-date and engaging online presence, I successfully attracted and retained a growing number of followers on social media platforms. As I was a professional in web development, I decided to redesign the website.\n\n**Key Responsibilities:**\n\n* Developing the website in Laravel framework to make optimize speed\n* Creating daily content on the website, and also for the bugs\n* Manage social media platforms, including launching and maintaining pages on various networks.\n* Execute marketing campaigns on social media platforms to increase engagement and attract a larger audience.\n* Create and maintain a content calendar to ensure consistent and timely delivery of content.\n\n**Achievements:**\n\n* Successfully migrated the company's website from WordPress to the Laravel framework, resulting in improved speed and performance."
     },
     {
       "start_date": "2016-02-01T15:12:20.353Z",
@@ -76,17 +87,6 @@
       "end_date": "2016-01-15T13:32:08.725Z",
       "description": "* Managing and posting content\n* Photography of products and uploading them to the website and social media pages\n* Other IT tasks",
       "address": "Darulaman St, District 6, Kabul, Afghanistan"
-    },
-    {
-      "start_date": "2023-06-23T21:34:51.299Z",
-      "end_date": "2023-06-23T21:34:51.312Z",
-      "description": "As a Freelancer and Opensource Contributor, my work involves leveraging my skills and expertise in various domains to provide freelance services and actively contribute to open-source projects. I am interested in these technologies:\n\n* JavaScript, TypeScript\n* Java, PHP\n* Google Cloud, MySQL, MongoDB\n* Vue.js, React.js, Nuxt.js\n\nWith expertise in these technologies and frameworks, I offer versatile freelance services and contribute effectively to open-source projects.",
-      "organization": {
-        "address": "Munich, Germany",
-        "website": "",
-        "name": "Self-employed "
-      },
-      "title": "Freelancer & Open Source Contributor"
     }
   ]
 }
