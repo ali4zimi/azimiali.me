@@ -4,9 +4,9 @@
         <h1 class="mb-3">Works</h1>
         <!-- <p>In progress: will upload my works soon</p> -->
         <div class="grid grid-cols-2 gap-3">
-          <nuxt-link :to="project.link" class="figure" v-for="project in data.projects">
-            <h3 class="my-1 text-slate-600 dark:text-slate-400">{{ project.name }}</h3>
-            <p class="text-sm">{{ project.description }}</p>
+          <nuxt-link :to="project.code_link" class="figure" v-for="project in data.projects">
+            <div class="figure-title">{{ project.name }}</div>
+            <div class="figure-description">{{ project.description }}</div>
           </nuxt-link>
         </div>
     </NuxtLayout>
@@ -20,6 +20,14 @@
 
 .figure:hover {
   @apply border-slate-900 dark:border-gray-100;
+}
+
+.figure-title {
+  @apply text-slate-600 dark:text-slate-400;
+}
+
+.figure-description {
+  @apply text-slate-600 dark:text-gray-400 font-thin text-sm;
 }
 </style>
 

@@ -3,14 +3,25 @@
     {
       "name": "Negah",
       "description": "An online platform for buying and selling things",
-      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib",
-      "link": "https://negaah.netlify.app/"
+      "technologies": ["NuxtJS", "Firebase"],
+      "link": "https://negaah.netlify.app/",
+      "code_link": "https://github.com/ali4zimi/negaah",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib"
     },
     {
       "name": "Rubab",
       "description": "A web music player built with Vue.js",
-      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib",
-      "link": "https://rubab.netlify.app/"
+      "technologies": ["Vue.js", "Pinia", "Vue Router"],
+      "link": "https://rubab.netlify.app/",
+      "code_link": "https://github.com/ali4zimi/rubab",
+      "image": "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib"
+    },
+    {
+      "name": "Effeciento",
+      "description": "A chrome extension for keeping yourself focused on your work and goals",
+      "technologies": ["Javascript", "HTML", "CSS"],
+      "link": "",
+      "code_link": "https://github.com/ali4zimi/efficiento"
     }
   ]
 }
