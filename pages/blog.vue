@@ -12,7 +12,7 @@
 									<span class="text-slate-400">{{ formatDate(article.publish_date) }}</span>
 								</div>
 								<div class="text-sm pt-3">
-									<span class="text-slate-600 uppercase">Lang: </span>
+									<span class="text-slate-600 uppercase">Lang: </span>	
 									<span class="text-slate-400">English</span>
 								</div>
 								<!-- <div class="text-sm pt-3">

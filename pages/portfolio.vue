@@ -3,7 +3,7 @@
     <NuxtLayout name="content">
         <h1 class="mb-3">Works</h1>
         <!-- <p>In progress: will upload my works soon</p> -->
-        <div class="grid grid-cols-2 gap-3">
+        <div class="grid sm:grid-cols-2 gap-3">
           <nuxt-link :to="project.code_link" class="figure" v-for="project in data.projects">
             <div class="figure-title">{{ project.name }}</div>
             <div class="figure-description">{{ project.description }}</div>
@@ -14,6 +14,9 @@
               </div>
             </div>
           </nuxt-link>
+        </div>
+        <div class="mt-10">
+          This page is inspired by <a href="https://roe.dev" class="text-slate-600 dark:text-slate-400 underline">Danial Roe</a>, one of the the programmer that always inspires me. Check out his portfolio 
         </div>
     </NuxtLayout>
   </NuxtLayout>

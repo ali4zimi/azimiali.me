@@ -26,9 +26,17 @@
 }
 
 .content a {
-  @apply text-slate-600 dark:text-slate-400;
+  @apply text-slate-800 dark:text-slate-400;
   text-decoration: none;
   font-weight: 500;
+}
+
+.content a:hover {
+  @apply text-slate-500 dark:text-slate-300;
+}
+
+.content img {
+  @apply w-full mx-auto rounded-md;
 }
 
 .content strong {
@@ -42,6 +50,16 @@
 .content li {
   @apply text-slate-600 dark:text-slate-400;
 }
+
+.content blockquote {
+  @apply border-l-4 border-slate-200 dark:border-slate-400 pl-4;
+}
+
+.content blockquote p {
+  @apply text-slate-600 dark:text-slate-400;
+}
+
+
 
 /* h1 {
     font-size: 2.5rem;
