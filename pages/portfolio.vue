@@ -15,8 +15,10 @@
             </div>
           </nuxt-link>
         </div>
-        <div class="mt-10">
-          This page is inspired by <a href="https://roe.dev" class="text-slate-600 dark:text-slate-400 underline">Danial Roe</a>, one of the the programmer that always inspires me. Check out his portfolio 
+        <div class="mt-8">
+          <p>
+            This design is inspired by <a href="https://roe.dev" class="text-slate-600 dark:text-slate-400 underline">Danial Roe</a>, one of the the programmer that always inspires me.
+          </p>
         </div>
     </NuxtLayout>
   </NuxtLayout>
