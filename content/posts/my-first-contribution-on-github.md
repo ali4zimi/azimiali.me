@@ -1,7 +1,7 @@
 ---
 title: My first contribution on github
 language: en
-date: 2023-07-09T11:07:43.597Z
+publish_date: 2023-07-09T11:07:43.597Z
 ---
 A few years ago, I was using Laravel for my projects, and I was new to the world of open source. Once I needed a package that facilitates messaging and a chat system for my B2B project. 
 
