@@ -37,7 +37,8 @@ const transformMarkdown = async (content) => {
               item.organization.name }}</a>
           </div>
         </div>
-        <div>
+        <div class="flex flex-col items-end">
+          <div class="text-sm sm:hidden">{{ item.end_date ? formatDate(item.end_date) : 'Now' }}</div>
           <div class="text-sm sm:hidden">{{ formatDate(item.start_date) }}</div>
         </div>
       </div>
@@ -179,11 +180,11 @@ const transformMarkdown = async (content) => {
 }
 
 .empty {
-  @apply  hidden  sm:flex;  
+  @apply px-0 hidden  sm:flex;  
 }
 
 .item-date {
-  @apply w-fit px-1 mt-1 rounded-md bg-slate-200 dark:bg-slate-400 hidden sm:block;
+  @apply w-fit px-2 mt-1 rounded-md bg-slate-200 dark:bg-slate-400 hidden sm:block;
 }
 
 </style>
