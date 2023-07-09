@@ -1,7 +1,7 @@
 ---
 title: My first contribution on github
 language: en
-date: 2023-07-09T09:15:11.142Z
+date: 2023-07-09T11:07:43.597Z
 ---
 A few years ago, I was using Laravel for my projects, and I was new to the world of open source. Once I needed a package that facilitates messaging and a chat system for my B2B project. 
 
@@ -9,8 +9,6 @@ Then, I found a package from [Mosunza](https://github.com/musonza), who has many
 
 ![](/images/chat-issue.png)
 
-\
-\
 After one day, I received a reply from the owner of the project, and he said feel free to pull a request. So, I forked the project and I started to learn about the pull request and how to do it. The first time I did a pull request was incorrect, and I learned that it is not possible to delete a pull request, instead, it should be closed, so I closed it and reopened another. 
 
 ![](/images/pull-request.png)
