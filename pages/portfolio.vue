@@ -17,17 +17,16 @@
         </div>
         
         <div class="mt-10">
-          <h3 class="mb-3 text-slate-400 font-thin">Contributions on Github</h3>
-          <div class="text-xl font-light flex flex-col gap-2">
+          <h2 class="mb-3 text-slate-600 dark:text-slate-400 font-thin">Contributions on Github</h2>
+          <div class="text-xl font-light flex flex-col gap-1">
             <nuxt-link :to="contribution.link" class="contribution" v-for="contribution in contributions">
-              <div class="title">{{ contribution.title }}</div>
-              <div class=" mt-0 flex justify-between text-slate-400 dark:text-slate-500">
+              <div class="contribution-title">{{ contribution.title }}</div>
+              <div class=" mt-0 flex gap-3 text-slate-400 dark:text-slate-600 text-[0.8rem]">
+                <div class="">{{ contribution.date }}</div>
                 <div class="flex gap-2">
-                  <div class="text-sm uppercase">Repo: </div>
-                  <div class="text-sm">{{ contribution.repo }}</div>
+                  <div class=" uppercase">Repo: </div>
+                  <div class="">{{ contribution.repo }}</div>
                 </div>
-
-                  <div class="text-sm text-slate-300 dark:text-slate-600">{{ contribution.date }}</div>
               </div>
             </nuxt-link>
           </div>
@@ -55,16 +54,17 @@
 
 .contribution {
   @apply bg-slate-50 dark:bg-gray-900 py-3 px-4 rounded-md border dark:border-gray-900;
-  /* @apply border-b dark:border-gray-900 py-3 px-4; */
+
 }
 
-.contribution .title {
-  @apply text-lg text-slate-600 dark:text-slate-400 whitespace-nowrap overflow-hidden overflow-ellipsis;
+.contribution-title {
+  @apply  font-thin  text-slate-500 dark:text-slate-400 whitespace-nowrap overflow-hidden overflow-ellipsis;
 }
 
 .contribution:hover {
   @apply border-slate-900 dark:border-gray-400;
 }
+
 
 </style>
 
