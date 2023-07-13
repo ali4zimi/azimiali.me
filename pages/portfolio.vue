@@ -15,10 +15,22 @@
             </div>
           </nuxt-link>
         </div>
-        <div class="mt-8">
-          <p>
-            This design is inspired by <a href="https://roe.dev" class="text-slate-600 dark:text-slate-400 underline">Danial Roe</a>, one of the the programmer that always inspires me.
-          </p>
+        
+        <div class="mt-10">
+          <h3 class="mb-3 text-slate-400 font-thin">Contributions on Github</h3>
+          <div class="text-xl font-light flex flex-col gap-2">
+            <nuxt-link :to="contribution.link" class="contribution" v-for="contribution in contributions">
+              <div class="title">{{ contribution.title }}</div>
+              <div class=" mt-0 flex justify-between text-slate-400 dark:text-slate-500">
+                <div class="flex gap-2">
+                  <div class="text-sm uppercase">Repo: </div>
+                  <div class="text-sm">{{ contribution.repo }}</div>
+                </div>
+
+                  <div class="text-sm text-slate-300 dark:text-slate-600">{{ contribution.date }}</div>
+              </div>
+            </nuxt-link>
+          </div>
         </div>
     </NuxtLayout>
   </NuxtLayout>
@@ -30,7 +42,7 @@
 }
 
 .figure:hover {
-  @apply border-slate-900 dark:border-gray-100;
+  @apply border-slate-900 dark:border-gray-400;
 }
 
 .figure-title {
@@ -40,6 +52,20 @@
 .figure-description {
   @apply text-slate-600 dark:text-gray-400 font-thin text-sm;
 }
+
+.contribution {
+  @apply bg-slate-50 dark:bg-gray-900 py-3 px-4 rounded-md border dark:border-gray-900;
+  /* @apply border-b dark:border-gray-900 py-3 px-4; */
+}
+
+.contribution .title {
+  @apply text-lg text-slate-600 dark:text-slate-400 whitespace-nowrap overflow-hidden overflow-ellipsis;
+}
+
+.contribution:hover {
+  @apply border-slate-900 dark:border-gray-400;
+}
+
 </style>
 
 <script setup>
@@ -55,5 +81,39 @@ useHead({
 })
 
 const { data } = await useAsyncData('portfolio', () => queryContent('/pages/portfolio').findOne())
+
+
+const contributions = [
+  {
+    title: 'docs: add instruction on how to use other modules in a module',
+    link: 'https://github.com/nuxt/nuxt/pull/22081',
+    repo: 'nuxt/nuxt',
+    date: 'Jul 11, 2023'
+  },
+  {
+    title: 'docs: added a note about server dynamic routes limitation',
+    link: 'https://github.com/nuxt/nuxt/pull/21919',
+    repo: 'nuxt/nuxt',
+    date: 'Jul 3, 2023'
+  },
+  {
+    title: 'feat: add language switcher option',
+    link: 'https://github.com/nuxt/movies/pull/41',
+    repo: 'nuxt/movies',
+    date: 'Jul 2, 2023'
+  },
+  {
+    title: 'fix: scrolling issue',
+    link: 'https://github.com/nuxt/movies/pull/29',
+    repo: 'nuxt/movies',
+    date: 'Jun 7, 2023'
+  },
+  {
+    title: "Added 'data()' function to store details about message type in 'data' column of 'message' table",
+    link: 'https://github.com/musonza/chat/pull/290',
+    repo: 'musonza/chat',
+    date: 'Dec 17, 2021'
+  },
+]
 
 </script>
