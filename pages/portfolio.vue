@@ -91,7 +91,7 @@ const contributions = [
     date: 'Jul 11, 2023'
   },
   {
-    title: '',
+    title: 'chore: Remove extendDefaultPlugins because it is deprecated',
     link: 'https://github.com/decaporg/decap-cms/pull/6834',
     repo: 'decaporg/decap-cms',
     date: 'Jul 4, 2023'
