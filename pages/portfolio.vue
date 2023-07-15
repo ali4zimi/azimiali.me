@@ -91,6 +91,12 @@ const contributions = [
     date: 'Jul 11, 2023'
   },
   {
+    title: '',
+    link: 'https://github.com/decaporg/decap-cms/pull/6834',
+    repo: 'decaporg/decap-cms',
+    date: 'Jul 4, 2023'
+  },
+  {
     title: 'docs: added a note about server dynamic routes limitation',
     link: 'https://github.com/nuxt/nuxt/pull/21919',
     repo: 'nuxt/nuxt',
