@@ -47,4 +47,8 @@ function collapse(e) {
     overflow: hidden;
     transition: max-height 0.5s ease-out;
 }
+
+.more-less-toggler {
+    @apply cursor-pointer
+}
 </style>

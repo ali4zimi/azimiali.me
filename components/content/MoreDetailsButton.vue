@@ -17,7 +17,7 @@ function expand(e) {
 </script>
 
 <template>
-    <div class="more-details-button inline-block">
+    <div class="more-details-button inline-block cursor-pointer">
         <span class="text-blue-300 hover:text-blue-500" @click="expand">More...</span>
     </div>
 </template>

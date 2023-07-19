@@ -86,7 +86,7 @@ const transformMarkdown = async (content) => {
 }
 
 .col-content {
-  @apply bg-slate-50 dark:bg-slate-900 dark:text-slate-200 rounded-md cursor-pointer border dark:border-gray-900 ;
+  @apply bg-slate-50 dark:bg-slate-900 dark:text-slate-200 rounded-md border dark:border-gray-900 ;
 }
 
 .col:hover {

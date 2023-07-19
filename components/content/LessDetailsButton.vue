@@ -18,7 +18,7 @@ function collapse(e) {
 </script>
 
 <template>
-    <div class="less-details-button inline-block hidden">
+    <div class="less-details-button inline-block hidden cursor-pointer">
         <span class="text-blue-300 hover:text-blue-500" @click="collapse">...Less</span>
     </div>
 </template>
