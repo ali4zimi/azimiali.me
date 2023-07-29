@@ -15,9 +15,10 @@
             </div>
           </nuxt-link>
         </div>
+
         
         <div class="mt-10">
-          <h2 class="mb-3 text-slate-600 dark:text-slate-400 font-thin">Contributions on Github</h2>
+          <h3 class="mb-3 text-slate-600 dark:text-slate-400 font-thin">Contributions on Github</h3>
           <div class="text-xl font-light flex flex-col gap-1">
             <nuxt-link :to="contribution.link" class="contribution" v-for="contribution in contributions">
               <div class="contribution-title">{{ contribution.title }}</div>
@@ -58,7 +59,7 @@
 }
 
 .contribution-title {
-  @apply  font-thin  text-slate-500 dark:text-slate-400 whitespace-nowrap overflow-hidden overflow-ellipsis;
+  @apply  font-thin text-sm  text-slate-600 dark:text-slate-400 whitespace-nowrap overflow-hidden overflow-ellipsis;
 }
 
 .contribution:hover {
