@@ -18,7 +18,7 @@
         <hr>
 
 
-        <div class="">
+        <div class="hidden">
           <h3 class="mb-3 text-slate-600 dark:text-slate-400 font-thin">Contributing to these projects</h3>
           <div class="flex gap-3">
             <div class="w-[150px] min-h-[50px] bg-gray-300 rounded-md py-3 px-4">
