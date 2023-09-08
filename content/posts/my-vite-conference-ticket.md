@@ -5,10 +5,4 @@ publish_date: 2023-09-08T12:16:18.752Z
 ---
 I will attend the Vite Conference, and I am really excited to hear from famous programmers.
 
-I got my ticket! 
-
-You can get yours too! 
-
-https://viteconf.org/23/tickets/ali4zimi 
-
 ![](/images/viteconf.png "Vite Conference 2023")
