@@ -23,9 +23,9 @@ export default defineNuxtConfig({
     },
     highlight: {
       theme: {
-        default: 'github-dark',
-        dark: 'vitesse-dark',
-      }
+        default: 'github-light',
+        dark: 'github-dark',
+      },
     }
   },
   tailwindcss: {

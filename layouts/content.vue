@@ -1,6 +1,6 @@
 <template>
     <div class=" mt-16 mb-28 px-4">
-        <main class="content prose mx-auto">
+        <main class="content prose mx-auto dark:prose-pre:bg-slate-700 dark:prose-invert">
             <slot />
         </main>
     </div>
