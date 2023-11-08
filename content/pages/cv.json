@@ -32,14 +32,14 @@
     {
       "start_date": "2023-06-23T21:34:51.299Z",
       "end_date": "",
-      "description": "As a Freelancer and Opensource Contributor, my work involves leveraging my skills and expertise in various domains to provide freelance services and actively contribute to open-source projects. I am interested in these technologies:\n\n::more-details\n* JavaScript, TypeScript\n* Java, PHP\n* Google Cloud, MySQL, MongoDB\n* Vue.js, React.js, Nuxt.js\n\nWith expertise in these technologies and frameworks, I offer versatile freelance services and contribute effectively to open-source projects.\n::",
+      "description": "I am currently working as a Research Assistant at the Technical University of Munich and I contribute by helping other students with the topics of their lectures and making them digestable for them. \n\n::more-details\n\n* Relational Database Modeling\n* SQL\n* Java and Object Oriented Programming\n* Data Structure and Algorithms\n\n::",
       "organization": {
         "address": "Munich, Germany",
-        "website": "",
-        "name": "Self-employed ",
-        "icon": "/images/opensource-logo.png"
+        "website": "https://www.tum.de",
+        "name": "TUM",
+        "icon": "/images/tum-logo.png"
       },
-      "title": "Freelancer & Open Source Contributor"
+      "title": "Research Assistant"
     },
     {
       "organization": {
