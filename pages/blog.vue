@@ -1,7 +1,7 @@
 <template>
 	<NuxtLayout>
 			<NuxtLayout name="content">
-				<h1 class=" mb-3">Articles</h1>
+				<h1 class=" mb-3">Posts</h1>
 				<ContentList path="/posts" v-slot="{ list }">
 					<div class="flex flex-col gap-2">
 						<nuxt-link :to="article._path" class="article title" v-for="article in articles" :key="article._path">
