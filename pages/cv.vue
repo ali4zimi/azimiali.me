@@ -8,9 +8,9 @@
       <main class="pb-14">
         <!-- <SkillList /> -->
 
-        <CvTimline title="Education" v-if="data" :list="data.educations" />
-
         <CvTimline title="Experience" v-if="data" :list="data.experiences" />
+        
+        <CvTimline title="Education" v-if="data" :list="data.educations" />
 
       </main>
     </div>
