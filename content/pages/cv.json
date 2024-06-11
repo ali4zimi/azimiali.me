@@ -12,7 +12,7 @@
       "title": "Master of Management and Technology",
       "start_date": "2022-10-01T13:55:38.008Z",
       "end_date": "",
-      "address": "München, Germany",
+      "address": "Munich, Germany",
       "description": "Technical University of Munich is ranked among the 25 best universities worldwide in several subject. \n\nThe course that I am studying is a newly founded interdisciplinary program that combines the fields of management and technology, offering students a comprehensive understanding of both business principles and technological advancements.\n\n"
     },
     {
@@ -30,28 +30,28 @@
   ],
   "experiences": [
     {
-      "start_date": "2024-05-23T21:34:51.299Z",
+      "start_date": "2024-04-15T21:34:51.299Z",
       "end_date": "",
       "description": "I am currently working as a Student assistant for Software Engineering course. I help students uderstand software engineering concepts and cloud architecture",
       "organization": {
-        "address": "München, Germany",
+        "address": "Munich, Germany",
         "website": "https://www.tum.de",
         "name": "TUM",
         "icon": "/images/tum-logo.png"
       },
-      "title": "Research Assistant"
+      "title": "Student Assistant"
     },
     {
       "start_date": "2023-10-15T21:34:51.299Z",
-      "end_date": "2024-05-15T21:34:51.299Z",
+      "end_date": "2024-04-15T21:34:51.299Z",
       "description": "I am currently working as a Student Assistant at the Technical University of Munich and I contribute by helping other students with the topics of their lectures and making them digestable for them.\n * Relational Database Modeling\n* SQL\n* Java and Object Oriented Programming\n* Data Structure and Algorithms",
       "organization": {
-        "address": "München, Germany",
+        "address": "Munich, Germany",
         "website": "https://www.tum.de",
         "name": "TUM",
         "icon": "/images/tum-logo.png"
       },
-      "title": "Research Assistant"
+      "title": "Student Assistant"
     },
     {
       "organization": {
@@ -78,6 +78,6 @@
       "end_date": "2019-07-20T12:23:53.296Z",
       "address": "Karte 4, Kabul, Afghanistan",
       "description": "As a content manager, I was in charge of uploading new content to the company's website and social media networks. By maintaining an up-to-date and engaging online presence, I successfully attracted and retained a growing number of followers on social media platforms. As I was a professional in web development, I decided to redesign the website. :more-details-button \n\n::more-details\n**Key Responsibilities:**\n\n* Developing the website in Laravel framework to make optimize speed\n* Creating daily content on the website, and also for the bugs\n* Manage social media platforms, including launching and maintaining pages on various networks.\n* Execute marketing campaigns on social media platforms to increase engagement and attract a larger audience.\n* Create and maintain a content calendar to ensure consistent and timely delivery of content.\n\n**Achievements:**\n\n* Successfully migrated the company's website from WordPress to the Laravel framework, resulting in improved speed and performance.\n::"
-    },
+    }
   ]
 }
