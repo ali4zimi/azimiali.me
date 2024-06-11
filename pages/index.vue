@@ -9,7 +9,7 @@
                 <div class="mt-0 mb-3">
                     <div class="text-slate-600 dark:text-slate-400">Cloud Software Engineering</div>
                     <div class="progressbar">
-                        <div class="progressbar-fill w-5/12">
+                        <div class="progressbar-fill w-10/12">
                             <!-- <div class="glow"></div> -->
                         </div>
                     </div>
@@ -17,7 +17,7 @@
                 <div class="mt-0 mb-3">
                     <div class="text-slate-600 dark:text-slate-400">Typescript</div>
                     <div class="progressbar">
-                        <div class="progressbar-fill w-9/12">
+                        <div class="progressbar-fill w-8/12">
                             <!-- <div class="glow"></div> -->
                         </div>
                     </div>
