@@ -33,7 +33,7 @@ const transformMarkdown = async (content) => {
           </div>
           <div>
             <div class="item-title">{{ item.title }}</div>
-            <span class="text-blue-600">{{ item.organization.name }}</span>
+            <span class="item-subtitle">{{ item.organization.name }}</span>
           </div>
         </div>
         <div class="flex flex-col items-end">
@@ -75,6 +75,10 @@ const transformMarkdown = async (content) => {
   @apply font-semibold text-slate-600 dark:text-slate-300;
 }
 
+.item-subtitle {
+  @apply font-semibold text-blue-600 dark:text-blue-400 ;
+}
+  
 .org-link {
   @apply text-blue-400 dark:text-blue-300 dark:opacity-70 hover:underline;
 }
