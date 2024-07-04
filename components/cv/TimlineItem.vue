@@ -76,7 +76,7 @@ const transformMarkdown = async (content) => {
 }
 
 .item-subtitle {
-  @apply font-semibold text-blue-600 dark:text-blue-400 ;
+  @apply font-semibold text-blue-800 dark:text-blue-600 ;
 }
   
 .org-link {
