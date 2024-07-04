@@ -33,8 +33,7 @@ const transformMarkdown = async (content) => {
           </div>
           <div>
             <div class="item-title">{{ item.title }}</div>
-            <a target="_blank" v-if="item.organization.website" :href="item.organization.website" class="org-link">{{
-              item.organization.name }}</a>
+            <span class="text-blue-600">{{ item.organization.name }}</span>
           </div>
         </div>
         <div class="flex flex-col items-end">
