@@ -138,10 +138,10 @@ const links = [
     name: 'Portfolio',
     path: '/portfolio',
   },
-  {
+  /* {
     name: 'Blog',
     path: '/blog',
-  },
+  }, */
 ]
 
 const theme = useTheme();
