@@ -7,12 +7,9 @@ export default defineNuxtConfig({
     // '@vueuse/nuxt',
   ],
 
-  
   css: [
     '~/assets/css/main.css',
   ],
-
-
 
   content: {
     markdown: {
@@ -28,11 +25,14 @@ export default defineNuxtConfig({
       },
     }
   },
+
   tailwindcss: {
 
   },
 
   devtools: {
     enabled: true
-  }
+  },
+
+  compatibilityDate: '2024-08-06'
 })
