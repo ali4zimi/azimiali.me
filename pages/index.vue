@@ -7,17 +7,17 @@
             <div class="">
                 <div class="mt-1 mb-0 text-2xl text-slate-600 font-thin dark:text-slate-400 p-0">Current Focus</div>
                 <div class="mt-0 mb-3">
-                    <div class="text-slate-600 dark:text-slate-400">Cloud [Kubernetes]</div>
+                    <div class="text-slate-600 dark:text-slate-400">Typescript</div>
                     <div class="progressbar">
-                        <div class="progressbar-fill w-10/12">
+                        <div class="progressbar-fill w-8/12">
                             <!-- <div class="glow"></div> -->
                         </div>
                     </div>
                 </div>
                 <div class="mt-0 mb-3">
-                    <div class="text-slate-600 dark:text-slate-400">Typescript</div>
+                    <div class="text-slate-600 dark:text-slate-400">RAG Applications</div>
                     <div class="progressbar">
-                        <div class="progressbar-fill w-8/12">
+                        <div class="progressbar-fill w-5/12">
                             <!-- <div class="glow"></div> -->
                         </div>
                     </div>
