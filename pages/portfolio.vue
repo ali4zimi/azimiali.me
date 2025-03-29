@@ -1,23 +1,6 @@
 <template>
   <NuxtLayout>
     <NuxtLayout name="content">
-        <h1 class="mb-3">Works</h1>
-        <!-- <p>In progress: will upload my works soon</p> -->
-        <div class="grid sm:grid-cols-2 gap-3">
-          <nuxt-link :to="project.code_link" class="figure" v-for="project in data.projects">
-            <div class="figure-title">{{ project.name }}</div>
-            <div class="figure-description">{{ project.description }}</div>
-            <div class="technologies-used absolute bottom-3">
-              <div class="text-slate-600 dark:text-slate-400 text-sm uppercase mt-5">Technologies used:</div>
-              <div class="flex gap-1">
-                <span v-for="technology in project.technologies" class="p-1 text-xs rounded-sm text-slate-200 dark:text-slate-400d bg-slate-800 dark:bg-slate-500">{{ technology }}</span>
-              </div>
-            </div>
-          </nuxt-link>
-        </div>
-        <hr>
-
-
         <div class="hidden">
           <h3 class="mb-3 text-slate-600 dark:text-slate-400 font-thin">Latest contributions</h3>
           <div class="flex gap-3">
@@ -46,6 +29,22 @@
               </div>
             </nuxt-link>
           </div>
+        </div>
+        <hr>
+
+        <h1 class="mb-3">Works</h1>
+        <!-- <p>In progress: will upload my works soon</p> -->
+        <div class="grid sm:grid-cols-2 gap-3">
+          <nuxt-link :to="project.code_link" class="figure" v-for="project in data.projects">
+            <div class="figure-title">{{ project.name }}</div>
+            <div class="figure-description">{{ project.description }}</div>
+            <div class="technologies-used absolute bottom-3">
+              <div class="text-slate-600 dark:text-slate-400 text-sm uppercase mt-5">Technologies used:</div>
+              <div class="flex gap-1">
+                <span v-for="technology in project.technologies" class="p-1 text-xs rounded-sm text-slate-200 dark:text-slate-400d bg-slate-800 dark:bg-slate-500">{{ technology }}</span>
+              </div>
+            </div>
+          </nuxt-link>
         </div>
     </NuxtLayout>
   </NuxtLayout>
