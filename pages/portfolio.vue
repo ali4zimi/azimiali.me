@@ -32,9 +32,9 @@
         </div>
         <hr>
 
-        <h1 class="mb-3">Works</h1>
+        <h1 class="mb-3 hidden">Works</h1>
         <!-- <p>In progress: will upload my works soon</p> -->
-        <div class="grid sm:grid-cols-2 gap-3">
+        <div class="grid sm:grid-cols-2 gap-3 hidden">
           <nuxt-link :to="project.code_link" class="figure" v-for="project in data.projects">
             <div class="figure-title">{{ project.name }}</div>
             <div class="figure-description">{{ project.description }}</div>
