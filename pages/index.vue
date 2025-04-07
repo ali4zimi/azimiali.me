@@ -25,8 +25,8 @@
             </div>
 
             <div class="mt-7 mb-3">
-                <div class="mt-1 mb-2 text-2xl text-slate-600 font-thin dark:text-slate-400 p-0">Technologies that I can work with:</div>
-                <ul class="list-disc list-inside text-slate-600 dark:text-slate-400 flex gap-5 flex-wrap">
+                <div class="mt-1 mb-5 text-2xl text-slate-600 font-thin dark:text-slate-400 p-0">Technologies that I can work with:</div>
+                <ul class="list-disc list-inside text-slate-600 dark:text-slate-400 flex gap-6 flex-wrap p-0">
                     <li v-for="(tech, index) in technologies" :key="index" class="flex items-center">
                         <span v-html="tech.icon"></span>
                     </li>
