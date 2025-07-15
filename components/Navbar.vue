@@ -130,10 +130,10 @@ const links = [
     name: 'Home',
     path: '/',
   },
-  {
-    name: 'CV',
-    path: '/cv',
-  },
+  // {
+  //   name: 'CV',
+  //   path: '/cv',
+  // },
   {
     name: 'Portfolio',
     path: '/portfolio',
