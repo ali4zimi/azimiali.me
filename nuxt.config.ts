@@ -11,6 +11,12 @@ export default defineNuxtConfig({
     '~/assets/css/main.css',
   ],
 
+  runtimeConfig: {
+    notionApiKey: "",
+    notionPostsDsId: "",
+    notionVisitorsDsId: "",
+  },
+
   content: {
     markdown: {
       toc: {
