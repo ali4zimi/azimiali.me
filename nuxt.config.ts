@@ -15,6 +15,7 @@ export default defineNuxtConfig({
     notionApiKey: "",
     notionPostsDsId: "",
     notionVisitorsDsId: "",
+    notionProjectsDsId: "",
   },
 
   content: {
