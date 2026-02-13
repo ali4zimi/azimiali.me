@@ -10,19 +10,9 @@
         Loading post...
       </div>
       
-      <div v-else>
-        <div class="mb-10">
-          <h1>{{ getPostTitle(data.post) }}</h1>
-          <div class="published-at text-slate-400 dark:text-slate-500 text-sm mb-3 border-t dark:border-slate-700">
-            {{ formatDate(getPublishDate(data.post)) }}
-          </div>
-        </div>
-        
-        <!-- Post Content -->
+      <div v-else>        
         <div class="post-content">
-          <div v-for="block in data.blocks" :key="block.id" class="mb-4">
-            <NotionBlock :block="block" />
-          </div>
+          <NotionRenderer :post="data.post" :blocks="data.blocks" />
         </div>
       </div>
     </NuxtLayout>
