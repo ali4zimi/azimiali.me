@@ -1,8 +1,10 @@
 <template>
     <NuxtLayout>
-        <NuxtLayout name="content">
-            <ContentDoc />
-
+        <div class="prose dark:prose-invert max-w-none mb-8">
+                <h1>Welcome!</h1>
+                <p>I am <a href="https://github.com/ali4zimi" target="_blank">Ali Azimi</a>, and I am a software engineer with a masters degree from the <a href="https://tum.de" target="_blank">Technical University of Munich</a>.</p>
+                <p>I am committed to staying up-to-date with the latest web development trends and technologies to provide innovative solutions to complex challenges.</p>
+            </div>
 
             <div class="">
                 <div class="mt-1 mb-0 text-2xl text-slate-600 font-thin dark:text-slate-400 p-0">Current Focus</div>
@@ -14,14 +16,14 @@
                         </div>
                     </div>
                 </div>
-                <!-- <div class="mt-0 mb-3">
-                    <div class="text-slate-600 dark:text-slate-400">RAG Applications</div>
+                <div class="mt-0 mb-3">
+                    <div class="text-slate-600 dark:text-slate-400">Cross-platform development</div>
                     <div class="progressbar">
                         <div class="progressbar-fill w-5/12">
                             <div class="glow"></div>
                         </div>
                     </div>
-                </div> -->
+                </div>
             </div>
 
             <div class="mt-7 mb-3">
@@ -32,8 +34,6 @@
                     </li>
                 </ul>
             </div>
-        </NuxtLayout>
-
     </NuxtLayout>
 </template>
   
@@ -79,6 +79,16 @@
 
 
 <script setup lang="ts">
+
+useHead({
+  title: 'Ali Azimi - A Web Developer',
+  meta: [
+    {
+      name: 'description',
+      content: 'I am software engineer, currently pursuing a Master\'s degree in Management and Technology at the Technical University of Munich.'
+    }
+  ]
+})
 
 const technologies = [
     { 

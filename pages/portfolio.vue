@@ -1,7 +1,6 @@
 <template>
   <NuxtLayout>
-    <NuxtLayout name="content">
-        <div class="hidden">
+    <div class="hidden">
           <h3 class="mb-3 text-slate-600 dark:text-slate-400 font-thin">Latest contributions</h3>
           <div class="flex gap-3">
             <div class="w-[150px] min-h-[50px] bg-gray-300 rounded-md py-3 px-4">
@@ -46,7 +45,6 @@
             </div>
           </nuxt-link>
         </div>
-    </NuxtLayout>
   </NuxtLayout>
 </template>
 
@@ -95,7 +93,33 @@ useHead({
   ]
 })
 
-const { data } = await useAsyncData('portfolio', () => queryContent('/pages/portfolio').findOne())
+const data = {
+  projects: [
+    {
+      name: "Negah",
+      description: "An online platform for buying and selling things",
+      technologies: ["NuxtJS", "Firebase"],
+      link: "https://negaah.netlify.app/",
+      code_link: "https://github.com/ali4zimi/negaah",
+      image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib"
+    },
+    {
+      name: "Rubab",
+      description: "A web music player built with Vue.js",
+      technologies: ["Vue.js", "Pinia", "Vue Router"],
+      link: "https://rubab.netlify.app/",
+      code_link: "https://github.com/ali4zimi/rubab",
+      image: "https://images.unsplash.com/photo-1515879218367-8466d910aaa4?ixlib"
+    },
+    {
+      name: "Effeciento",
+      description: "A chrome extension for keeping yourself focused on your work and goals",
+      technologies: ["Javascript", "HTML", "CSS"],
+      link: "",
+      code_link: "https://github.com/ali4zimi/efficiento"
+    }
+  ]
+}
 
 
 const contributions = [

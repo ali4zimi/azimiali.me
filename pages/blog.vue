@@ -1,7 +1,6 @@
 <template>
 	<NuxtLayout>
-			<NuxtLayout name="content">
-				<h1 class=" mb-3">Posts</h1>
+		<h1 class=" mb-3">Posts</h1>
 				<div v-if="error" class="text-red-500 dark:text-red-400">
 					Failed to load posts. Please try again later.
 				</div>
@@ -29,7 +28,6 @@
 						</div>
 					</nuxt-link>
 				</div>
-			</NuxtLayout>
 	</NuxtLayout>
 </template>
 

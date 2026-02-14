@@ -1,7 +1,6 @@
 <template>
   <NuxtLayout>
-    <NuxtLayout name="content">
-      <div v-if="error" class="text-red-500 dark:text-red-400">
+    <div v-if="error" class="text-red-500 dark:text-red-400">
         <h1>Post Not Found</h1>
         <p>{{ error }}</p>
       </div>
@@ -15,7 +14,6 @@
           <NotionRenderer :post="data.post" :blocks="data.blocks" />
         </div>
       </div>
-    </NuxtLayout>
   </NuxtLayout>
 </template>
 

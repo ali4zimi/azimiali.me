@@ -9,7 +9,6 @@
     "postinstall": "nuxt prepare"
   },
   "devDependencies": {
-    "@nuxt/content": "^2.7.0",
     "@nuxt/devtools": "^3.1.1",
     "@nuxtjs/tailwindcss": "^6.8.0",
     "@tailwindcss/typography": "^0.5.9",
@@ -17,6 +16,7 @@
     "nuxt": "^3.6.2"
   },
   "dependencies": {
-    "@notionhq/client": "^5.9.0"
+    "@notionhq/client": "^5.9.0",
+    "shiki": "^3.22.0"
   }
 }

@@ -1,7 +1,6 @@
 <template>
   <NuxtLayout>
-    <NuxtLayout name="content">
-      <h1 class="mb-3">Projects</h1>
+    <h1 class="mb-3">Projects</h1>
       
       <div v-if="error" class="text-red-500 dark:text-red-400">
         Failed to load projects. Please try again later.
@@ -70,7 +69,6 @@
           </div>
         </div>
       </div>
-    </NuxtLayout>
   </NuxtLayout>
 </template>
 

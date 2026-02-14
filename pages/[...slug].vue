@@ -1,14 +1,12 @@
 <template>
   <NuxtLayout>
-    <NuxtLayout name="content">
-      <ContentDoc v-slot="{ doc }">
+    <ContentDoc v-slot="{ doc }">
         <div class="mb-10">
           <h1 class="">{{ doc.title }}</h1>
           <div class="published-at text-slate-400 dark:text-slate-500 text-sm mb-3 border-t dark:border-slate-700">{{ formatDate(doc.publish_date) }}</div>
         </div>
         <ContentRenderer :value="doc" />
       </ContentDoc>
-    </NuxtLayout>
   </NuxtLayout>
 </template>
 
