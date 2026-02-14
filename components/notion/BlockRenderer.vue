@@ -20,6 +20,7 @@
 <script setup>
 import ParagraphBlock from './blocks/ParagraphBlock.vue';
 import HeadingBlock from './blocks/HeadingBlock.vue';
+import CodeBlock from './blocks/CodeBlock.vue';
 import UnsupportedBlock from './blocks/UnsupportedBlock.vue';
 
 
@@ -36,6 +37,7 @@ const registry = {
   heading_1: HeadingBlock,
   heading_2: HeadingBlock,
   heading_3: HeadingBlock,
+  code: CodeBlock,
   // bulleted_list_item: ListItemBlock,
   // numbered_list_item: ListItemBlock
 };
