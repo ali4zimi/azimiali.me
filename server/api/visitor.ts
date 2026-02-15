@@ -7,6 +7,9 @@ export default defineEventHandler(async (event) => {
   const notionVisitorsDsId = config.notionVisitorsDsId;
 
   try {
+    const body = await readBody(event);
+    const page = body?.page || "Unknown";
+    
     // Get geolocation from Vercel headers (automatically provided)
     const headers = getHeaders(event);
     
@@ -29,6 +32,9 @@ export default defineEventHandler(async (event) => {
         City: {
             rich_text: [{ text: { content: city } }],
         },
+        Page: {
+            rich_text: [{ text: { content: page } }],
+        },
         Date: {
             date: { start: new Date().toISOString() },
         }
@@ -39,6 +45,7 @@ export default defineEventHandler(async (event) => {
       success: true,
       country,
       city,
+      page,
     };
 
   } catch (error: any) {
