@@ -10,7 +10,7 @@
         Loading projects...
       </div>
       
-      <div v-else class="flex flex-col gap-3">
+      <div v-else class="flex flex-col gap-3 mb-20">
         <div 
           v-if="data.projects.length === 0" 
           class="text-slate-600 dark:text-slate-400"
@@ -74,8 +74,16 @@
 
 <style scoped>
 .project-card {
-  @apply flex items-stretch gap-0 border dark:border-gray-900 overflow-hidden rounded-lg bg-slate-50 dark:bg-gray-900 transition-all;
-  height: 200px;
+  @apply flex flex-col md:flex-row items-stretch gap-0 border dark:border-gray-900 overflow-hidden rounded-lg bg-slate-50 dark:bg-gray-900 transition-all;
+  height: auto;
+  min-height: 300px;
+}
+
+@media (min-width: 768px) {
+  .project-card {
+    height: 200px;
+    min-height: 200px;
+  }
 }
 
 .project-card:hover {
@@ -84,19 +92,27 @@
 
 .project-thumbnail {
   @apply flex-shrink-0 bg-slate-100 dark:bg-slate-700;
-  width: 250px;
+  width: 100%;
+  height: 200px;
+}
+
+@media (min-width: 768px) {
+  .project-thumbnail {
+    width: 250px;
+    height: auto;
+  }
 }
 
 .project-content {
-  @apply flex flex-col gap-2 py-5 px-5 flex-1;
+  @apply flex flex-col gap-2 py-4 px-4 md:py-5 md:px-5 flex-1;
 }
 
 .project-title {
-  @apply text-xl font-bold text-slate-600 dark:text-slate-400 leading-tight m-0;
+  @apply text-lg md:text-xl font-bold text-slate-600 dark:text-slate-400 leading-tight m-0;
 }
 
 .project-description {
-  @apply text-slate-600 dark:text-slate-400 text-sm line-clamp-2 m-0 font-thin;
+  @apply text-slate-600 dark:text-slate-400 text-sm line-clamp-2 md:line-clamp-2 m-0 font-thin;
 }
 
 .project-tags {
@@ -104,7 +120,7 @@
 }
 
 .project-tag {
-  @apply px-3 py-1 rounded-full text-sm font-medium bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200;
+  @apply px-2 py-1 md:px-3 rounded-full text-xs md:text-sm font-medium bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200;
 }
 
 .project-link {
