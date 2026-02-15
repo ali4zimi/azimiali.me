@@ -34,10 +34,6 @@
   font-weight: 500;
 }
 
-.content a:hover {
-  @apply text-slate-500 dark:text-slate-300;
-}
-
 .content img {
   @apply w-full mx-auto rounded-md;
 }

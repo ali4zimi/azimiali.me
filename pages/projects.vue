@@ -112,6 +112,6 @@
 }
 </style>
 
-<script setup >
+<script setup>
 const { data, error } = await useFetch("/api/projects");
 </script>
