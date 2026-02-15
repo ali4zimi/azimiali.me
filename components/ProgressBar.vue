@@ -8,7 +8,7 @@
   top: 0;
   left: 0;
   height: 3px;
-  background: linear-gradient(to right, #64748b, #475569);
+  background: linear-gradient(to right, #64748b, #334155);
   z-index: 9999;
   transition: width 0.2s ease-out, opacity 0.4s ease-in-out;
   width: 0%;

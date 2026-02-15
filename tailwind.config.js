@@ -14,6 +14,12 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        // Semantic design tokens
+        'primary-bg': 'rgb(var(--color-primary-bg) / <alpha-value>)',
+        'secondary-bg': 'rgb(var(--color-secondary-bg) / <alpha-value>)',
+        'card-bg': 'rgb(var(--color-card-bg) / <alpha-value>)',
+      },
       typography: {
         DEFAULT: {
           css: {

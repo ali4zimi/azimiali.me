@@ -8,7 +8,7 @@
 				Loading posts...
 			</div>
 			<div v-else class="flex flex-col gap-2">
-				<nuxt-link :to="generatePostUrl(post)" class="article title" v-for="post in data.posts" :key="post.id">
+				<nuxt-link :to="generatePostUrl(post)" class="card py-5 px-4" v-for="post in data.posts" :key="post.id">
 					<div class="title">{{ post.properties.title.title[0].plain_text }}</div>
 					<div class="flex gap-5">
 						<div class="text-sm pt-3">
@@ -32,24 +32,8 @@
 </template>
 
 <style>
-.article {
-	@apply w-full py-5 px-4 bg-slate-50 border rounded-md cursor-pointer
-}
-
-.dark .article {
-	@apply bg-gray-900 border-gray-900 text-gray-100 hover:border-gray-100
-}
-
-.article:hover {
-	@apply border-gray-950
-}
-
-.article .title {
-	/* @apply text-xl truncate text-slate-600 dark:text-slate-400 */
-}
-
-.article .publish-date {
-	@apply text-gray-500
+.publish-date {
+	@apply text-slate-500 dark:text-slate-400
 }
 </style>
 

@@ -2,6 +2,44 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  /* Reusable Card Component */
+  .card {
+    @apply w-full bg-white dark:bg-zinc-900 border border-slate-200 dark:border-zinc-800 rounded-md transition-all cursor-pointer;
+  }
+
+  .card:hover {
+    @apply border-slate-900 dark:border-zinc-600 shadow-sm;
+  }
+
+  /* Animated Link Underline */
+  .link-underline {
+    @apply relative pb-1 transition-all duration-300;
+  }
+
+  .link-underline::after {
+    content: '';
+    @apply absolute bottom-0 left-0 w-0 h-[3px] bg-slate-700 dark:bg-slate-300 transition-all duration-300;
+  }
+
+  .link-underline:hover::after,
+  .link-underline.active::after {
+    @apply w-full;
+  }
+
+  .link-underline.active {
+    @apply font-bold text-slate-950 dark:text-slate-50;
+  }
+
+  .link-underline.active::after {
+    @apply bg-slate-900 dark:bg-slate-50;
+  }
+
+  /* Tag/Badge Component */
+  .tag {
+    @apply px-2 py-1 md:px-3 rounded-full text-xs md:text-sm font-medium bg-slate-100 dark:bg-zinc-800 text-slate-700 dark:text-slate-300;
+  }
+}
 
 @layer base {
   html {
@@ -10,7 +48,7 @@
   }
 
   body {
-    @apply bg-gray-100 dark:bg-gray-800
+    @apply bg-slate-50 dark:bg-zinc-950
   }
 
 

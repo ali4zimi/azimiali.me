@@ -16,9 +16,19 @@
 }
 
 .content h1 {
-  @apply mb-3 text-slate-600 dark:text-slate-400;
+  @apply mb-3 text-slate-600 dark:text-slate-100;
   font-weight: 400;
   font-size: 2rem;
+}
+
+.content h2 {
+  @apply text-slate-700 dark:text-slate-200;
+  font-weight: 700;
+}
+
+.content h3 {
+  @apply text-slate-700 dark:text-slate-300;
+  font-weight: 700;
 }
 
 .content p {

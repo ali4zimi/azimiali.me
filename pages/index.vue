@@ -39,30 +39,17 @@
   
 <style scoped>
 .progressbar {
-    @apply w-full h-2 bg-slate-200 rounded-md;
-    box-shadow: steelblue 0 0 5px rgba(0, 0, 0, 0.2);
-}
-
-.dark .progressbar {
-    @apply bg-slate-700;
+    @apply w-full h-2 bg-slate-200 dark:bg-zinc-800 rounded-md;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
 }
 
 .progressbar-fill {
     @apply h-full rounded-md flex justify-end;
-    background: linear-gradient(90deg, #c3f2ee, #4dc0b5);
-    /* background-size: 500%; */
-    /* animation: progress 30s linear infinite; */
+    background: linear-gradient(90deg, #94a3b8, #3b82f6);
 }
 
-.glow {
-    /* @apply h-full w-[100px];
-    shadow: 0 0 100px rgba(118, 211, 117, 0.5);
-    background: linear-gradient(90deg, #c3f2ee, #4dc0b5);
-    opacity: 0.5; */
-}
-
-.dark  .progressbar-fill {
-    background: linear-gradient(90deg, #25514d, #4dc0b5);
+.dark .progressbar-fill {
+    background: linear-gradient(90deg, #18181b, #3b82f6);
 }
 
 

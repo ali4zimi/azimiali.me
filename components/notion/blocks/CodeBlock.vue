@@ -57,7 +57,7 @@ onMounted(async () => {
 
 <style scoped>
 .code-block-wrapper {
-  @apply my-4 rounded-lg overflow-hidden border border-gray-200 dark:border-gray-700 relative;
+  @apply my-4 rounded-lg overflow-hidden border border-slate-200 dark:border-zinc-800 relative;
   background: rgb(46, 52, 64);
 }
 
@@ -66,7 +66,7 @@ onMounted(async () => {
 }
 
 .language-label {
-  @apply absolute top-2 right-2 text-xs font-mono text-gray-500 dark:text-gray-500 uppercase px-2 py-1 rounded;
+  @apply absolute top-2 right-2 text-xs font-mono text-slate-500 dark:text-slate-500 uppercase px-2 py-1 rounded;
   background: rgba(112, 112, 112, 0.2);
   z-index: 10;
 }
@@ -86,12 +86,12 @@ onMounted(async () => {
 }
 
 .fallback-code {
-  @apply m-0 p-4 bg-white dark:bg-gray-800 overflow-x-auto text-sm;
+  @apply m-0 p-4 bg-white dark:bg-zinc-900 overflow-x-auto text-sm;
   font-family: 'Courier New', monospace;
 }
 
 .fallback-code code {
-  @apply text-gray-800 dark:text-gray-200;
+  @apply text-slate-800 dark:text-slate-200;
 }
 
 /* Override Shiki's inline background to use our container background */

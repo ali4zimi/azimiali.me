@@ -18,7 +18,7 @@
           No projects found.
         </div>
         
-        <div v-for="project in data.projects" :key="project.id" class="project-card">
+        <div v-for="project in data.projects" :key="project.id" class="card project-card">
           <!-- Thumbnail -->
           <div 
             class="project-thumbnail"
@@ -46,11 +46,11 @@
             </p>
             
             <!-- Tags -->
-            <div v-if="project.properties.Tag.multi_select.length > 0" class="project-tags">
+            <div v-if="project.properties.Tag.multi_select.length > 0" class="flex flex-wrap gap-2">
               <span 
                 v-for="tag in project.properties.Tag.multi_select" 
                 :key="tag.id" 
-                class="project-tag"
+                class="tag"
               >
                 {{ tag.name }}
               </span>
@@ -74,7 +74,7 @@
 
 <style scoped>
 .project-card {
-  @apply flex flex-col md:flex-row items-stretch gap-0 border dark:border-gray-900 overflow-hidden rounded-lg bg-slate-50 dark:bg-gray-900 transition-all;
+  @apply flex flex-col md:flex-row items-stretch gap-0 overflow-hidden rounded-lg;
   height: auto;
   min-height: 300px;
 }
@@ -86,12 +86,8 @@
   }
 }
 
-.project-card:hover {
-  @apply border-slate-900 dark:border-gray-400;
-}
-
 .project-thumbnail {
-  @apply flex-shrink-0 bg-slate-100 dark:bg-slate-700;
+  @apply flex-shrink-0 bg-slate-100 dark:bg-zinc-800/50;
   width: 100%;
   height: 200px;
 }
@@ -113,14 +109,6 @@
 
 .project-description {
   @apply text-slate-600 dark:text-slate-400 text-sm line-clamp-2 md:line-clamp-2 m-0 font-thin;
-}
-
-.project-tags {
-  @apply flex flex-wrap gap-2;
-}
-
-.project-tag {
-  @apply px-2 py-1 md:px-3 rounded-full text-xs md:text-sm font-medium bg-slate-200 dark:bg-slate-600 text-slate-700 dark:text-slate-200;
 }
 
 .project-link {

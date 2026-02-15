@@ -1,10 +1,10 @@
 <template>
-  <div class="mobile-menuoverlay fixed top-0 left-0 bottom-0 right-0 bg-slate-200 opacity-5 dark:bg-slate-950 dark:opacity-30 z-30"  v-if="isMobileMenuOpen" @click="toggleMobileMenu">
+  <div class="mobile-menuoverlay fixed top-0 left-0 bottom-0 right-0 bg-slate-900 opacity-20 dark:bg-black dark:opacity-50 z-30"  v-if="isMobileMenuOpen" @click="toggleMobileMenu">
   </div>
   <div class="mobile-menu fixed z-40" :class="isMobileMenuOpen ? 'active' : ''">
     <ul class="mobile-menu-links">
       <li v-for="link in links">
-        <nuxt-link :to="link.path">{{ link.name }}</nuxt-link>
+        <nuxt-link :to="link.path" class="link-underline">{{ link.name }}</nuxt-link>
       </li>
     </ul>
   </div>
@@ -32,7 +32,7 @@
     <div class="nav-menu">
       <ul class="nav-links flex">
         <li v-for="link in links">
-          <nuxt-link :to="link.path">{{ link.name }}</nuxt-link>
+          <nuxt-link :to="link.path" class="link-underline text-xl">{{ link.name }}</nuxt-link>
         </li>
         <li>
           <nuxt-link to="https://github.com/ali4zimi">
@@ -64,7 +64,7 @@
 
 <style>
 .navbar {
-  @apply w-full py-6 px-6 bg-gray-200 flex justify-between items-center relative dark:bg-gray-900 border-b border-gray-100 dark:border-gray-700 z-50
+  @apply w-full py-6 px-6 bg-slate-100 flex justify-between items-center relative dark:bg-zinc-900 border-b border-slate-200 dark:border-zinc-800 z-50
 }
 
 .nav-menu {
@@ -79,21 +79,8 @@
   @apply flex items-center
 }
 
-.nav-menu a {
-  @apply text-xl relative pb-1 transition-all duration-300
-}
-
-.nav-menu a::after {
-  content: '';
-  @apply absolute bottom-0 left-0 w-0 h-[3px] bg-slate-700 dark:bg-slate-300 transition-all duration-300
-}
-
-.nav-menu a:hover::after {
-  @apply w-full
-}
-
 .nav-menu a.router-link-exact-active {
-  @apply  text-slate-900 dark:text-slate-100
+  @apply font-bold text-slate-950 dark:text-slate-50
 }
 
 .nav-menu a.router-link-exact-active::after {
@@ -108,29 +95,16 @@
   @apply  flex sm:hidden cursor-pointer
 }
 .mobile-menu-toggler svg {
-  @apply text-gray-900 dark:text-gray-100
+  @apply text-slate-900 dark:text-slate-100
 }
 
 
 .mobile-menu {
-  @apply w-[270px] py-[120px] px-7 fixed top-0 left-[-270px] bottom-0 bg-gray-200 dark:bg-gray-900 flex flex-col gap-5 text-xl text-slate-700 dark:text-slate-300 transition-all duration-300 ease-in-out z-40
+  @apply w-[270px] py-[120px] px-7 fixed top-0 left-[-270px] bottom-0 bg-slate-100 dark:bg-zinc-900 flex flex-col gap-5 text-xl text-slate-700 dark:text-slate-300 transition-all duration-300 ease-in-out z-40
 }
 
 .mobile-menu-links {
   @apply flex flex-col gap-5
-}
-
-.mobile-menu-links a {
-  @apply relative pb-1 transition-all duration-300
-}
-
-.mobile-menu-links a::after {
-  content: '';
-  @apply absolute bottom-0 left-0 w-0 h-[3px] bg-slate-700 dark:bg-slate-300 transition-all duration-300
-}
-
-.mobile-menu-links li:hover a::after {
-  @apply w-full
 }
 
 .mobile-menu-links li:hover {

@@ -35,7 +35,7 @@ const getTextClasses = (textItem) => {
     if (textItem.annotations.italic) classes.push('italic');
     if (textItem.annotations.strikethrough) classes.push('line-through');
     if (textItem.annotations.underline) classes.push('underline');
-    if (textItem.annotations.code) classes.push('bg-gray-100 dark:bg-gray-800 px-1 py-0.5 rounded text-sm font-mono');
+    if (textItem.annotations.code) classes.push('bg-slate-100 dark:bg-zinc-900 px-1 py-0.5 rounded text-sm font-mono');
   }
   
   return classes.join(' ');

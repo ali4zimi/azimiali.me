@@ -9,7 +9,7 @@
     <div class="flex flex-col gap-2 mb-20">
       <a 
         :href="contribution.link" 
-        class="contribution" 
+        class="card py-3 px-4" 
         v-for="contribution in contributions" 
         :key="contribution.link"
         target="_blank"
@@ -29,20 +29,8 @@
 </template>
 
 <style scoped>
-.contribution {
-  @apply bg-slate-50 dark:bg-gray-900 py-3 px-4 rounded-md border dark:border-gray-900;
-}
-
 .contribution-title {
- @apply w-full py-2 bg-slate-50 rounded-md cursor-pointer
-}
-
-.dark .contribution-title {
-  @apply bg-gray-900 text-gray-100 hover:border-gray-100
-}
-
-.contribution:hover {
-  @apply border-slate-900 dark:border-gray-400;
+ @apply w-full py-2
 }
 </style>
 
