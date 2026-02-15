@@ -55,7 +55,6 @@
 
 
 <script setup>
-
 const { data, error } = await useFetch("/api/posts");
 const { createSlug, setMappings } = usePostSlugMapping();
 
@@ -85,4 +84,14 @@ const generatePostUrl = (post) => {
 	const slug = createSlug(title);
 	return `/post/${slug}`;
 }
+
+useHead({
+	title: 'Blog - Ali Azimi',
+	meta: [
+		{
+			name: 'description',
+			content: 'Read my latest blog posts on web development, programming, and technology.'
+		}
+	]
+})
 </script>

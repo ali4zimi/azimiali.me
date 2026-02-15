@@ -114,4 +114,14 @@
 
 <script setup>
 const { data, error } = await useFetch("/api/projects");
+
+useHead({
+  title: 'Projects - Ali Azimi',
+  meta: [
+    {
+      name: 'description',
+      content: 'A showcase of projects I have worked on, including personal and open source projects.'
+    }
+  ]
+})
 </script>
