@@ -80,7 +80,24 @@
 }
 
 .nav-menu a {
-  @apply text-xl 
+  @apply text-xl relative pb-1 transition-all duration-300
+}
+
+.nav-menu a::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-[3px] bg-slate-700 dark:bg-slate-300 transition-all duration-300
+}
+
+.nav-menu a:hover::after {
+  @apply w-full
+}
+
+.nav-menu a.router-link-exact-active {
+  @apply  text-slate-900 dark:text-slate-100
+}
+
+.nav-menu a.router-link-exact-active::after {
+  @apply w-full bg-slate-900 dark:bg-slate-50
 }
 
 .theme-switcher {
@@ -103,8 +120,29 @@
   @apply flex flex-col gap-5
 }
 
+.mobile-menu-links a {
+  @apply relative pb-1 transition-all duration-300
+}
+
+.mobile-menu-links a::after {
+  content: '';
+  @apply absolute bottom-0 left-0 w-0 h-[3px] bg-slate-700 dark:bg-slate-300 transition-all duration-300
+}
+
+.mobile-menu-links li:hover a::after {
+  @apply w-full
+}
+
 .mobile-menu-links li:hover {
   @apply text-slate-950 dark:text-slate-50 font-semibold
+}
+
+.mobile-menu-links a.router-link-exact-active {
+  @apply font-bold text-slate-950 dark:text-slate-50
+}
+
+.mobile-menu-links a.router-link-exact-active::after {
+  @apply w-full bg-slate-900 dark:bg-slate-50
 }
 
 .mobile-menu.active {
