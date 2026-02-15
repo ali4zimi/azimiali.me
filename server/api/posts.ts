@@ -12,6 +12,12 @@ export default defineEventHandler(async (event) => {
     try {
         const posts = await notion.dataSources.query({
             data_source_id: notionPostsDsId,
+            filter: {
+                property: "status",
+                select: {
+                    equals: "published"
+                }
+            }
         });
         return {
             success: true,

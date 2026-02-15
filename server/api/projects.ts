@@ -12,6 +12,12 @@ export default defineEventHandler(async (event) => {
   try {
     const projects = await notion.dataSources.query({
       data_source_id: notionProjectsDsId,
+      filter: {
+		property: "status",
+		status: {
+          equals: "Done"
+        }
+      }
     });
 
     return { 
